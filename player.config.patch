@@ -8,5 +8,10 @@
 		"op" : "add",
 		"path" : "/deploymentConfig/speciesStarterMechBody/hubsnugget",
 		"value" : "mechbodynovakidproto"
+	},
+	{
+		"op" : "add",
+		"path" : "/statusControllerSettings/primaryScriptSources/-",
+		"value" : "/stats/hubsnugget_primary.lua"
 	}
 ]

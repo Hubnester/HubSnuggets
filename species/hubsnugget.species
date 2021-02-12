@@ -12,7 +12,7 @@
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/humanoid/novakidhurt_male2.ogg", "/sfx/humanoid/novakidhurt_female2.ogg" ],
-	"charGenTextLabels" : [ "Gas colour", "", "", "", "", "", "", "", "SNUGGET", "" ],
+	"charGenTextLabels" : [ "Gas colour", "", "", "", "", "Eye Color", "", "", "SNUGGET", "" ],
 	"skull" : "/humanoid/novakid/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
@@ -92,6 +92,8 @@
 		]
 	},
 	"altOptionAsUndyColor" : true,
+	"headOptionAsHairColor" : true,
+	"hairColorAsBodySubColor" : true,
 	"genders" : [
 		{
 			"name" : "male",
@@ -121,25 +123,25 @@
 	"bodyColor" : [
 		// The colours are darkest to lightest, body -> eyes -> mouth
 		// Yellow
-		{ "F5B204" : "F5B204", "FDE03F" : "FDE03F", "FBF4B0" : "FBF4B0", "FFFCDA" : "FFFCDA",  "FFFFFF" : "FFFFFF", "937018" : "937018", "AC8523" : "AC8523", "FDDE34" : "FDDE34"},
+		{ "F5B204" : "F5B204", "FDE03F" : "FDE03F", "FBF4B0" : "FBF4B0", "FFFCDA" : "FFFCDA",  "FFFFFF" : "FFFFFF", "FDDE34" : "FDDE34"},
 		// Blue
-		{ "F5B204" : "12C2E8", "FDE03F" : "56EBF8", "FBF4B0" : "C1FBFC", "FFFCDA" : "E2FEFE",  "FFFFFF" : "FFFFFF", "937018" : "005844", "AC8523" : "039271", "FDDE34" : "56EBF8"},
+		{ "F5B204" : "12C2E8", "FDE03F" : "56EBF8", "FBF4B0" : "C1FBFC", "FFFCDA" : "E2FEFE",  "FFFFFF" : "FFFFFF", "FDDE34" : "56EBF8"},
 		// Blue Grey
-		{ "F5B204" : "6EA2A9", "FDE03F" : "A2DBDB", "FBF4B0" : "C8F8F8", "FFFCDA" : "DEFFFF",  "FFFFFF" : "FFFFFF", "937018" : "222D33", "AC8523" : "4E6877", "FDDE34" : "C1EFEF"},
+		{ "F5B204" : "6EA2A9", "FDE03F" : "A2DBDB", "FBF4B0" : "C8F8F8", "FFFCDA" : "DEFFFF",  "FFFFFF" : "FFFFFF", "FDDE34" : "C1EFEF"},
 		// Green
-		{ "F5B204" : "52F052", "FDE03F" : "A7FFA7", "FBF4B0" : "DAFEDA", "FFFCDA" : "F5FEF5",  "FFFFFF" : "FFFFFF", "937018" : "004D00", "AC8523" : "097E09", "FDDE34" : "9FFF9F"},
+		{ "F5B204" : "52F052", "FDE03F" : "A7FFA7", "FBF4B0" : "DAFEDA", "FFFCDA" : "F5FEF5",  "FFFFFF" : "FFFFFF", "FDDE34" : "9FFF9F"},
 		// Light Green
-		{ "F5B204" : "8AE100", "FDE03F" : "C9F236", "FBF4B0" : "FFFDAE", "FFFCDA" : "FDFDE5",  "FFFFFF" : "FFFFFF", "937018" : "2D510D", "AC8523" : "528129", "FDDE34" : "D7FC50"},
+		{ "F5B204" : "8AE100", "FDE03F" : "C9F236", "FBF4B0" : "FFFDAE", "FFFCDA" : "FDFDE5",  "FFFFFF" : "FFFFFF", "FDDE34" : "D7FC50"},
 		// Orange
-		{ "F5B204" : "FA8131", "FDE03F" : "FEB05C", "FBF4B0" : "FFEDC4", "FFFCDA" : "FEF7E5",  "FFFFFF" : "FFFFFF", "937018" : "40110A", "AC8523" : "944033", "FDDE34" : "FEBF7B"},
+		{ "F5B204" : "FA8131", "FDE03F" : "FEB05C", "FBF4B0" : "FFEDC4", "FFFCDA" : "FEF7E5",  "FFFFFF" : "FFFFFF", "FDDE34" : "FEBF7B"},
 		// Pink
-		{ "F5B204" : "F578FC", "FDE03F" : "F5C8F7", "FBF4B0" : "FEE5FF", "FFFCDA" : "FEF1FE",  "FFFFFF" : "FFFFFF", "937018" : "760A7C", "AC8523" : "A52FAB", "FDDE34" : "F5B9F8"},
+		{ "F5B204" : "F578FC", "FDE03F" : "F5C8F7", "FBF4B0" : "FEE5FF", "FFFCDA" : "FEF1FE",  "FFFFFF" : "FFFFFF", "FDDE34" : "F5B9F8"},
 		// Purple
-		{ "F5B204" : "AE38F1", "FDE03F" : "DA89F7", "FBF4B0" : "EDC1FD", "FFFCDA" : "FFF3FF",  "FFFFFF" : "FFFFFF", "937018" : "340E52", "AC8523" : "6F349D", "FDDE34" : "EAB2FE"},
+		{ "F5B204" : "AE38F1", "FDE03F" : "DA89F7", "FBF4B0" : "EDC1FD", "FFFCDA" : "FFF3FF",  "FFFFFF" : "FFFFFF", "FDDE34" : "EAB2FE"},
 		// Red
-		{ "F5B204" : "FF7438", "FDE03F" : "FFBB94", "FBF4B0" : "FDE1DF", "FFFCDA" : "FEEFED",  "FFFFFF" : "FFFFFF", "937018" : "973205", "AC8523" : "C35321", "FDDE34" : "FFAD89"},
+		{ "F5B204" : "FF7438", "FDE03F" : "FFBB94", "FBF4B0" : "FDE1DF", "FFFCDA" : "FEEFED",  "FFFFFF" : "FFFFFF", "FDDE34" : "FFAD89"},
 		// Turquoise
-		{ "F5B204" : "47D7C2", "FDE03F" : "A0F3E3", "FBF4B0" : "B6FDEF", "FFFCDA" : "E9FFFB",  "FFFFFF" : "FFFFFF", "937018" : "005844", "AC8523" : "039271", "FDDE34" : "A3F2E4"}
+		{ "F5B204" : "47D7C2", "FDE03F" : "A0F3E3", "FBF4B0" : "B6FDEF", "FFFCDA" : "E9FFFB",  "FFFFFF" : "FFFFFF", "FDDE34" : "A3F2E4"}
 	],
 	"undyColor" : [
 		{ "f32200" : "FFDCC4", "dc1f00" : "FFB98F", "be1b00" : "C1695F", "951500" : "7E3F38" },
@@ -160,21 +162,15 @@
 		{ "f32200" : "FFFFFF", "dc1f00" : "F2EFF3", "be1b00" : "A6A4AE", "951500" : "818181" }
 	],
 	"hairColor" : [
-		{ "f7e7b2" : "FFB0A3", "d9c189" : "FC8469", "a38d59" : "BE424D", "735e3a" : "782027" },
-		{ "f7e7b2" : "FFEBC2", "d9c189" : "F6B060", "a38d59" : "B37F34", "735e3a" : "6D5013" },
-		{ "f7e7b2" : "DFCFB3", "d9c189" : "C7AE76", "a38d59" : "94824F", "735e3a" : "5A512B" },
-		{ "f7e7b2" : "F1EABB", "d9c189" : "D8D077", "a38d59" : "A09E4E", "735e3a" : "5F6229" },
-		{ "f7e7b2" : "DBF4B8", "d9c189" : "A4D66B", "a38d59" : "6F9E47", "735e3a" : "426D26" },
-		{ "f7e7b2" : "B3C89E", "d9c189" : "82AB5F", "a38d59" : "547A3C", "735e3a" : "2D4F1D" },
-		{ "f7e7b2" : "B8F4BB", "d9c189" : "72DD7E", "a38d59" : "4AA559", "735e3a" : "266535" },
-		{ "f7e7b2" : "B8F4D9", "d9c189" : "72DDB3", "a38d59" : "4AA586", "735e3a" : "266554" },
-		{ "f7e7b2" : "B1F1FE", "d9c189" : "5DD1EC", "a38d59" : "3491AA", "735e3a" : "196072" },
-		{ "f7e7b2" : "B5C2FA", "d9c189" : "758BF8", "a38d59" : "4A5BA5", "735e3a" : "272665" },
-		{ "f7e7b2" : "E2B2FF", "d9c189" : "B374D4", "a38d59" : "7C4992", "735e3a" : "4B2655" },
-		{ "f7e7b2" : "FDD8F2", "d9c189" : "F1AFDF", "a38d59" : "D67EC1", "735e3a" : "AF579A" },
-		{ "f7e7b2" : "F9D9DA", "d9c189" : "EAB2B5", "a38d59" : "CC8288", "735e3a" : "A55B61" },
-		{ "f7e7b2" : "B8B0A8", "d9c189" : "967E6E", "a38d59" : "654D43", "735e3a" : "372720" },
-		{ "f7e7b2" : "9E9B94", "d9c189" : "767162", "a38d59" : "3F3C2E", "735e3a" : "1E1400" },
-		{ "f7e7b2" : "FFFFFF", "d9c189" : "D7D5DB", "a38d59" : "8E8E9B", "735e3a" : "6D6D6D" }
+		{ "937018" : "937018", "AC8523" : "AC8523" },
+		{ "937018" : "005844", "AC8523" : "039271" },
+		{ "937018" : "222D33", "AC8523" : "4E6877" },
+		{ "937018" : "004D00", "AC8523" : "097E09" },
+		{ "937018" : "2D510D", "AC8523" : "528129" },
+		{ "937018" : "40110A", "AC8523" : "944033" },
+		{ "937018" : "760A7C", "AC8523" : "A52FAB" },
+		{ "937018" : "340E52", "AC8523" : "6F349D" },
+		{ "937018" : "973205", "AC8523" : "C35321" },
+		{ "937018" : "005844", "AC8523" : "039271" }
 	]
 }
