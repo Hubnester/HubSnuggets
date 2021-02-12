@@ -1,0 +1,15 @@
+[
+	{
+		"op" : "add",
+		"path" : "/baseParameters/hubsnuggetText",
+		"value" : [
+			"Hello <playerName>",
+			"Hello friend"
+		]
+	},
+	{
+		"op" : "add",
+		"path" : "/baseParameters/scripts/-",
+		"value" : "/monsters/pets/snugget/hubpetsnugget.lua"
+	}
+]
