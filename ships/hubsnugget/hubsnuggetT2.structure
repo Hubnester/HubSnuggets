@@ -1,0 +1,37 @@
+{
+	"config" : {
+		"shipUpgrades" : {
+			"capabilities" : ["teleport", "planetTravel"],
+			"crewSize" : 2
+		}
+	},
+
+	"backgroundOverlays" : [],
+	"hub_backgroundOverlays" : {
+		"default" : [
+			{
+				"image" : "default/novakidT2.png",
+				"position" : [-24.5, 12.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "default/novakidT2lit.png",
+				"position" : [-24.5, 12.75]
+			}
+		],
+		"black" : [
+			{
+				"image" : "black/novakidt2.png",
+				"position" : [-24.5, 12.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black/novakidt2lit.png",
+				"position" : [-24.5, 12.75]
+			}
+		]
+	},
+
+	"blockKey" : "blockKey.config:blockKey",
+	"blockImage" : "novakidT2blocks.png"
+}

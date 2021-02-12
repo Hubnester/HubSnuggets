@@ -12,7 +12,7 @@
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/humanoid/novakidhurt_male2.ogg", "/sfx/humanoid/novakidhurt_female2.ogg" ],
-	"charGenTextLabels" : [ "Gas colour", "Nothing", "Nothing", "Nothing", "", "Eye Color", "Nothing", "Nothing", "SNUGGET", "Nothing" ],
+	"charGenTextLabels" : [ "Gas colour", "N/A", "N/A", "N/A", "", "Eye Color", "N/A", "N/A", "SNUGGET", "N/A" ],
 	"skull" : "/humanoid/novakid/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {

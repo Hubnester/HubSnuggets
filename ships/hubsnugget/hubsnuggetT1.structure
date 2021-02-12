@@ -1,0 +1,37 @@
+{
+	"config" : {
+		"shipUpgrades" : {
+			"capabilities" : [],
+			"crewSize" : 2
+		}
+	},
+
+	"backgroundOverlays" : [],
+	"hub_backgroundOverlays" : {
+		"default" : [
+			{
+				"image" : "default/novakidT1.png",
+				"position" : [-24.5, 12.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "default/novakidT1lit.png",
+				"position" : [-24.5, 12.75]
+			}
+		],
+		"black" : [
+			{
+				"image" : "black/novakidt1.png",
+				"position" : [-24.5, 12.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black/novakidt1lit.png",
+				"position" : [-24.5, 12.75]
+			}
+		]
+	},
+
+	"blockKey" : "blockKey.config:blockKey",
+	"blockImage" : "novakidT1blocks.png"
+}
