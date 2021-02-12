@@ -12,7 +12,7 @@
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/humanoid/novakidhurt_male2.ogg", "/sfx/humanoid/novakidhurt_female2.ogg" ],
-	"charGenTextLabels" : [ "Gas colour", "", "", "", "", "", "", "", "SNUGGET", "Personality" ],
+	"charGenTextLabels" : [ "Gas colour", "", "", "", "", "", "", "", "SNUGGET", "" ],
 	"skull" : "/humanoid/novakid/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
@@ -119,20 +119,27 @@
 		}
 	],
 	"bodyColor" : [
+		// The colours are darkest to lightest, body -> eyes -> mouth
 		// Yellow
-		{ "fff8b5" : "fff8b5", "fde03f" : "fde03f", "f6b919" : "f6b919", "806319" : "352b12" }
+		{ "F5B204" : "F5B204", "FDE03F" : "FDE03F", "FBF4B0" : "FBF4B0", "FFFCDA" : "FFFCDA",  "FFFFFF" : "FFFFFF", "937018" : "937018", "AC8523" : "AC8523", "FDDE34" : "FDDE34"},
 		// Blue
-		
+		{ "F5B204" : "12C2E8", "FDE03F" : "56EBF8", "FBF4B0" : "C1FBFC", "FFFCDA" : "E2FEFE",  "FFFFFF" : "FFFFFF", "937018" : "005844", "AC8523" : "039271", "FDDE34" : "56EBF8"},
 		// Blue Grey
-		
+		{ "F5B204" : "6EA2A9", "FDE03F" : "A2DBDB", "FBF4B0" : "C8F8F8", "FFFCDA" : "DEFFFF",  "FFFFFF" : "FFFFFF", "937018" : "222D33", "AC8523" : "4E6877", "FDDE34" : "C1EFEF"},
 		// Green
-		
+		{ "F5B204" : "52F052", "FDE03F" : "A7FFA7", "FBF4B0" : "DAFEDA", "FFFCDA" : "F5FEF5",  "FFFFFF" : "FFFFFF", "937018" : "004D00", "AC8523" : "097E09", "FDDE34" : "9FFF9F"},
 		// Light Green
-		
+		{ "F5B204" : "8AE100", "FDE03F" : "C9F236", "FBF4B0" : "FFFDAE", "FFFCDA" : "FDFDE5",  "FFFFFF" : "FFFFFF", "937018" : "2D510D", "AC8523" : "528129", "FDDE34" : "D7FC50"},
 		// Orange
-		
-		// 
-
+		{ "F5B204" : "FA8131", "FDE03F" : "FEB05C", "FBF4B0" : "FFEDC4", "FFFCDA" : "FEF7E5",  "FFFFFF" : "FFFFFF", "937018" : "40110A", "AC8523" : "944033", "FDDE34" : "FEBF7B"},
+		// Pink
+		{ "F5B204" : "F578FC", "FDE03F" : "F5C8F7", "FBF4B0" : "FEE5FF", "FFFCDA" : "FEF1FE",  "FFFFFF" : "FFFFFF", "937018" : "760A7C", "AC8523" : "A52FAB", "FDDE34" : "F5B9F8"},
+		// Purple
+		{ "F5B204" : "AE38F1", "FDE03F" : "DA89F7", "FBF4B0" : "EDC1FD", "FFFCDA" : "FFF3FF",  "FFFFFF" : "FFFFFF", "937018" : "340E52", "AC8523" : "6F349D", "FDDE34" : "EAB2FE"},
+		// Red
+		{ "F5B204" : "FF7438", "FDE03F" : "FFBB94", "FBF4B0" : "FDE1DF", "FFFCDA" : "FEEFED",  "FFFFFF" : "FFFFFF", "937018" : "973205", "AC8523" : "C35321", "FDDE34" : "FFAD89"},
+		// Turquoise
+		{ "F5B204" : "47D7C2", "FDE03F" : "A0F3E3", "FBF4B0" : "B6FDEF", "FFFCDA" : "E9FFFB",  "FFFFFF" : "FFFFFF", "937018" : "005844", "AC8523" : "039271", "FDDE34" : "A3F2E4"}
 	],
 	"undyColor" : [
 		{ "f32200" : "FFDCC4", "dc1f00" : "FFB98F", "be1b00" : "C1695F", "951500" : "7E3F38" },
