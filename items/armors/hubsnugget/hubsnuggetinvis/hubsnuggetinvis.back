@@ -11,6 +11,7 @@
   "maleFrames" : "back.png",
   "femaleFrames" : "back.png",
   "maxStack" : 1,
+  "consumeOnPickup" : true,
 
   "colorOptions" : [
     // YELLOW

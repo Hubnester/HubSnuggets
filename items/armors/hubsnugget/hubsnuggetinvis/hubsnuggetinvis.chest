@@ -8,6 +8,7 @@
 	"description" : "Hides the chest armor appearance. ^red;DO NOT REMOVE!^reset;",
 	"shortdescription" : "Snugget Invisible Chest",
 	"tooltipKind" : "armor",
+	"consumeOnPickup" : true,
 
 	"maleFrames" : {
 		"body" : "chest.png",

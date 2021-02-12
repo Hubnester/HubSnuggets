@@ -12,6 +12,7 @@
 	"maleFrames" : "head.png",
 	"femaleFrames" : "head.png",
 	"mask" : "mask.png",
+	"consumeOnPickup" : true,
 
 	"colorOptions" : [
 		// RED

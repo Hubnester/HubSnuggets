@@ -12,7 +12,7 @@
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/humanoid/novakidhurt_male2.ogg", "/sfx/humanoid/novakidhurt_female2.ogg" ],
-	"charGenTextLabels" : [ "Gas colour", "", "", "", "", "Eye Color", "", "", "SNUGGET", "" ],
+	"charGenTextLabels" : [ "Gas colour", "Nothing", "Nothing", "Nothing", "", "Eye Color", "Nothing", "Nothing", "SNUGGET", "Nothing" ],
 	"skull" : "/humanoid/novakid/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
@@ -172,5 +172,14 @@
 		{ "937018" : "340E52", "AC8523" : "6F349D" },
 		{ "937018" : "973205", "AC8523" : "C35321" },
 		{ "937018" : "005844", "AC8523" : "039271" }
-	]
+	],
+	
+	//hubsnugget unique stuff
+	"mouthPosition" : [0, -0.875],
+	"allowedCosmetics" : {
+		"hubsnuggetinvisback" : true,
+		"hubsnuggetinvishead" : true,
+		"hubsnuggetinvischest" : true,
+		"hubsnuggetinvislegs" : true
+	}
 }

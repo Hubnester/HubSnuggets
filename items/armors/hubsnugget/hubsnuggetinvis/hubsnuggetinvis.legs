@@ -11,6 +11,7 @@
 
 	"maleFrames" : "pants.png",
 	"femaleFrames" : "pants.png",
+	"consumeOnPickup" : true,
 
 	"colorOptions" : [
 		// RED
