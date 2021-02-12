@@ -1,0 +1,7 @@
+[
+	{
+		"op" : "add",
+		"path" : "/defaultCodexes/hubsnugget",
+		"value" : [ "protectorate1", "protectorate2" ]
+	}
+]

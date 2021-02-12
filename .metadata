@@ -1,0 +1,13 @@
+{
+  "author" : "Hubnester",
+  "description" : "TODO",
+  "friendlyName" : "TODO
+  Features: 
+  - Snugget Race
+  - Snuggets are now fullbright",
+  "includes" : [],
+  "name" : "HubSnuggets",
+  "priority" : 1,
+  "requires" : [],
+  "version" : "1.0"
+}

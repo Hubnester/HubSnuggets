@@ -1,0 +1,11 @@
+[
+	{
+		"op" : "add",
+		"path" : "/species/hubsnugget",
+		"value" : {
+			"aiFrames" : "NovakidAI.png",
+			"portraitFrames" : "portraits/novakidportrait.png",
+			"staticFrames" : "staticGlitch.png"
+		}
+	}
+]
