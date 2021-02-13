@@ -28,7 +28,7 @@
 	"inventoryIcon" : "teleportericonTier0.png",
 	"orientations" : [
 		{
-			"image" : "/assetmissing.png",
+			"dualImage" : "/assetmissing.png",
 			"spaceScan" : 0.1,
 			"anchors" : [ "bottom" ],
 			"collision" : "solid",

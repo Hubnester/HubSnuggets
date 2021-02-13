@@ -20,7 +20,7 @@
 	"inventoryIcon" : "fuelhatchicon.png",
 	"orientations" : [
 		{
-			"image" : "/assetmissing.png",
+			"dualImage" : "/assetmissing.png",
 			"spaceScan" : 0.1,
 			"anchors" : [ "background" ],
 			"spaces" : [

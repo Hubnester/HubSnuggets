@@ -9,6 +9,7 @@ function init()
 	self.position = entity.position()
 	self.orientations = config.getParameter("hubsnuggetOrientations") or {}
 	self.directory = root.itemConfig(object.name()).directory
+	self.isDoor = config.getParameter("isDoor")
 end
 
 function update(dt)
@@ -21,8 +22,8 @@ function update(dt)
 				self.orientations[shipType].images = self.orientations[shipType].imageLayers
 			elseif self.orientations[shipType].image then
 				self.orientations[shipType].images = {{image = self.orientations[shipType].image}}
-			elseif self.orientations[shipType].duelImage then
-				self.orientations[shipType].images = {{image = self.orientations[shipType].duelImage}}
+			elseif self.orientations[shipType].dualImage then
+				self.orientations[shipType].images = {{image = self.orientations[shipType].dualImage}}
 			else 
 				sb.logWarn("Unknown orientations image format detected, aborting image data loading for " .. tostring(object.name()) .. " of ship type " .. shipType)
 				storage.shipType = shipType
@@ -43,5 +44,13 @@ function update(dt)
 		end
 		object.setConfigParameter("renderData", self.orientations[shipType])
 		storage.shipType = shipType
+	end
+	
+	if self.isDoor then
+		if animator.animationState("doorState") == "open" then
+			object.setConfigParameter("doorState", "open")
+		else
+			object.setConfigParameter("doorState", "close")
+		end
 	end
 end

@@ -6,10 +6,11 @@ function init()
 	script.setUpdateDelta(config.getParameter("animationScriptDelta", 1))
 	
 	self.animationTimer = 0
+	self.doorTimer = 0
 	if objectAnimator.direction() == 1 then
-		self.direction = ""
-	else
 		self.direction = "?flipx"
+	else
+		self.direction = ""
 	end
 end
 
@@ -35,19 +36,25 @@ function update()
 		-- Get the gsub data for if it's a door
 		local doorState = config.getParameter("doorState")
 		if doorState then
-			if self.doorState ~= doorState then
+			if doorState ~= self.doorState then
 				self.doorState = doorState
 				frame = 1
+				self.doorTimer = 0
 			else
-				frame = 2
+				if self.doorTimer >= 0.02 then	-- Improve door handling at some stage and make this configurable
+					frame = 2
+				else
+					frame = 1
+					self.doorTimer = self.doorTimer + dt
+				end
 			end
 			if self.direction == "" then
 				for i, _ in ipairs (renderData.images) do
-					renderData.images[i] = renderData.images[i]:gsub("default", doorState .. "Right." .. frame)
+					renderData.images[i].image = renderData.images[i].image:gsub("default", doorState .. "Right." .. frame)
 				end
 			else
 				for i, _ in ipairs (renderData.images) do
-					renderData.images[i] = renderData.images[i]:gsub("default", doorState .. "Left." .. frame)
+					renderData.images[i].image = renderData.images[i].image:gsub("default", doorState .. "Left." .. frame)
 				end
 			end
 		end
@@ -58,7 +65,7 @@ function update()
 					image = imageData.image:gsub("<frame>", frame):gsub("<color>", "default"):gsub("<key>", 1) .. self.direction,
 					position = renderData.position,
 					fullbright = imageData.fullbright
-				}, "object+" .. i)
+				}, "object+" .. ((doorstate and 5) or (i - 1)))
 		end
 	end
 end
