@@ -7,7 +7,7 @@
 	},
 
 	"backgroundOverlays" : [],
-	"hub_backgroundOverlays" : {
+	"hubsnuggetBackgroundOverlays" : {
 		"default" : [
 			{
 				"image" : "default/novakidT8_1.png",

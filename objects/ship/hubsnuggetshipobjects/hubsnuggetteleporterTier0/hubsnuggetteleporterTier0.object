@@ -1,0 +1,80 @@
+{
+	"objectName" : "hubsnuggetteleporterTier0",
+	"colonyTags" : ["hubsnugget"],
+	"printable" : false,
+	"rarity" : "Common",
+	
+	"category" : "decorative",
+	"description" : "Trusty teleporter, what would we do without you?",
+	"shortdescription" : "Teleporter",
+	"race" : "hubsnugget",
+
+	"apexDescription" : "The ship's teleporter. I need to power it up.",
+	"avianDescription" : "The teleporter! If only this one was powered up.",
+	"floranDescription" : "Ship teleporter. This one dead.",
+	"glitchDescription" : "Disappointed. A teleporter without power. I need to power it up.",
+	"humanDescription" : "The teleporter! Too bad it isn't powered up.",
+	"hylotlDescription" : "This teleporter is off.",
+	"novakidDescription" : "Ship's teleporter. I need to power her up!",
+
+	"objectType" : "loungeable",
+	"sitFlipDirection" : true,
+	"sitOrientation" : "lay",
+	"sitAngle" : 90,
+	"sitEmote" : "sleep",
+	"sitStatusEffects" : [ ],
+	"sitEffectEmitters" : [ "sleepbubbles" ],
+
+	"inventoryIcon" : "teleportericonTier0.png",
+	"orientations" : [
+		{
+			"image" : "/assetmissing.png",
+			"spaceScan" : 0.1,
+			"anchors" : [ "bottom" ],
+			"collision" : "solid",
+			"collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0], [-2, 9], [-1, 9], [0, 9], [1, 9] ],
+			"sitPosition" : [-8, 8],
+			"spaces" : [
+				[-4, 9], [-3, 9], [-2, 9], [-1, 9], [0, 9], [1, 9], [2, 9], [3, 9],
+				[-4, 8], [-3, 8], [-2, 8], [-1, 8], [0, 8], [1, 8], [2, 8], [3, 8],
+				[-4, 7], [-3, 7], [-2, 7], [-1, 7], [0, 7], [1, 7], [2, 7], [3, 7],
+				[-4, 6], [-3, 6], [-2, 6], [-1, 6], [0, 6], [1, 6], [2, 6], [3, 6],
+				[-4, 5], [-3, 5], [-2, 5], [-1, 5], [0, 5], [1, 5], [2, 5], [3, 5],
+				[-4, 4], [-3, 4], [-2, 4], [-1, 4], [0, 4], [1, 4], [2, 4], [3, 4],
+				[-4, 3], [-3, 3], [-2, 3], [-1, 3], [0, 3], [1, 3], [2, 3], [3, 3],
+				[-4, 2], [-3, 2], [-2, 2], [-1, 2], [0, 2], [1, 2], [2, 2], [3, 2],
+				[-4, 1], [-3, 1], [-2, 1], [-1, 1], [0, 1], [1, 1], [2, 1], [3, 1],
+				[-4, 0], [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0], [3, 0]
+			]
+		}
+	],
+	"hubsnuggetOrientations" : {
+		"default" : {
+			"image" : "novakidteleporterTier0.png:<color>",
+			"imagePosition" : [-32, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5
+		},
+		"black" : {
+			"image" : "blacknovakidteleporterTier0.png:<color>",
+			"imagePosition" : [-32, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5
+		}
+	},
+
+	"animation" : "/objects/noisy/noisy.animation",
+
+	"scripts" : [
+		"/objects/noisy/noisy.lua",
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua"
+	],
+	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
+	"scriptDelta" : 20,
+	"animationScriptDelta" : 1,
+	
+	"sounds" : [ "/sfx/interface/clickon_error.ogg" ],
+
+	"soundEffect" : "/sfx/objects/shipengine.ogg",
+	"soundEffectRangeMultiplier" : 1.5
+}

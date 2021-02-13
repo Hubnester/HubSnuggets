@@ -1,16 +1,18 @@
 require "/scripts/vec2.lua"
 
 function update()
-	if world.getProperty("ship.level", 0) ~= storage.shipLevel or world.getProperty("hubsnuggetShipType", "default") ~= storage.shipType then
+	local shipLevel = world.getProperty("ship.level", 0)
+	local shipType = world.getProperty("hubsnuggetShipType", "default")
+	if shipLevel ~= storage.shipLevel or shipType ~= storage.shipType then
 		local shipsConfig = root.assetJson("/universe_server.config").speciesShips["hubsnugget"]
 		if shipsConfig then
-			local shipConfigPath = shipsConfig[world.getProperty("ship.level", 0) + 1] or shipsConfig[#shipsConfig]
+			local shipConfigPath = shipsConfig[shipLevel + 1] or shipsConfig[#shipsConfig]
 			local shipConfig = root.assetJson(shipConfigPath)
 			local reversedFile = string.reverse(shipConfigPath)
 			local snipLocation = string.find(reversedFile, "/")
 			local shipPathGsub = string.sub(shipConfigPath, -snipLocation + 1)
 			-- could cause errors, but the object shouldn't be there if errors could occur here
-			local backgroundOverlays = shipConfig.hub_backgroundOverlays[world.getProperty("hubsnuggetShipType", "default")]	
+			local backgroundOverlays = shipConfig.hubsnuggetBackgroundOverlays[shipType]	
 			for i, overlay in ipairs (backgroundOverlays) do
 				if string.sub(overlay.image, 1, 1) ~= "/" then
 					backgroundOverlays[i].image = shipConfigPath:gsub(shipPathGsub, overlay.image)
@@ -53,10 +55,10 @@ function update()
 			local baseImageOffset = root.imageSpaces(blockImage, {0.69, 0.69}, 0.3)	-- Not sure why but non-whole numbers between 0.5 and 1 seem to have 1 space at 0.3 spacescan, might need to investigate this more later, but this works for now
 			object.setConfigParameter("backgroundOverlays", backgroundOverlays)
 			object.setConfigParameter("baseImageOffset", baseImageOffset[1])
-			storage.shipLevel = world.getProperty("ship.level", 0)
-			storage.shipType = world.getProperty("hubsnuggetShipType", "default")
-			object.setConfigParameter("shipLevel", storage.shipLevel)
-			object.setConfigParameter("shipType", storage.shipType)
+			storage.shipLevel = shipLevel
+			storage.shipType = shipType
+			object.setConfigParameter("shipLevel", shipLevel)
+			object.setConfigParameter("shipType", shipType)
 		end
 	end
 end
