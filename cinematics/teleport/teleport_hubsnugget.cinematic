@@ -178,7 +178,7 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/teleport/up_novakid.png:<frame>"
+          "image" : "/cinematics/teleport/up_hubsnugget.png:<frame>"
         }
       ],
       "animationFrames" : 4,
@@ -209,7 +209,7 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/teleport/warpdown_novakid.png:<frame>"
+          "image" : "/cinematics/teleport/warpdown_hubsnugget.png:<frame>"
         }
       ],
       "animationFrames" : 4,

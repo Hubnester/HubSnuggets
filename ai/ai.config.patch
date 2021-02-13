@@ -3,8 +3,8 @@
 		"op" : "add",
 		"path" : "/species/hubsnugget",
 		"value" : {
-			"aiFrames" : "NovakidAI.png",
-			"portraitFrames" : "portraits/novakidportrait.png",
+			"aiFrames" : "hubsnuggetAI.png",
+			"portraitFrames" : "portraits/hubsnuggetportrait.png",
 			"staticFrames" : "staticGlitch.png"
 		}
 	}

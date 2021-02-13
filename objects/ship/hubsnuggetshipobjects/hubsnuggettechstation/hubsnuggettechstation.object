@@ -65,22 +65,22 @@
 	"shipPetType" : "snugget",
 	"spawnOffset" : [2, -1],
 
-	"chatPortrait" : "/ai/portraits/novakidportrait.png:yell.1",
+	"chatPortrait" : "/ai/portraits/hubsnuggetportrait.png:yell.1",
 	"dialog" : {
 		"wakeUp" : [
-			[ "Rebooting...", "/ai/portraits/novakidportrait.png:unique.1" ],
-			[ "I am S.A.I.L, your Ship-based Artificial Intelligence Lattice. I manage the maintainance of your ship.", "/ai/portraits/novakidportrait.png:talk.0" ],
-			[ "I am also programmed to offer you information and advice.", "/ai/portraits/novakidportrait.png:talk.1" ],
-			[ "Earth was attacked by an unknown force, and was subsequently annihilated.", "/ai/portraits/novakidportrait.png:talk.0" ],
-			[ "The ship's navigation systems were damaged in our escape. Our location is currently unknown.", "/ai/portraits/novakidportrait.png:talk.1" ]
+			[ "Rebooting...", "/ai/portraits/hubsnuggetportrait.png:unique.1" ],
+			[ "I am S.A.I.L, your Ship-based Artificial Intelligence Lattice. I manage the maintainance of your ship.", "/ai/portraits/hubsnuggetportrait.png:talk.0" ],
+			[ "I am also programmed to offer you information and advice.", "/ai/portraits/hubsnuggetportrait.png:talk.1" ],
+			[ "Earth was attacked by an unknown force, and was subsequently annihilated.", "/ai/portraits/hubsnuggetportrait.png:talk.0" ],
+			[ "The ship's navigation systems were damaged in our escape. Our location is currently unknown.", "/ai/portraits/hubsnuggetportrait.png:talk.1" ]
 		],
 		"wakePlayer" : [
-			[ "System is down, please reboot.", "/ai/portraits/novakidportrait.png:unique.1"],
-			[ "Please reboot the system.", "/ai/portraits/novakidportrait.png:unique.1"],
-			[ "Reboot process remains uninitiated.", "/ai/portraits/novakidportrait.png:unique.1"],
-			[ "To make use of your S.A.I.L please reboot.", "/ai/portraits/novakidportrait.png:unique.1" ],
-			[ "Rebooting has shown to improve ship interaction satisfaction levels by 73%.", "/ai/portraits/novakidportrait.png:unique.1"],
-			[ "Rebooting requires a conscious entity to interact with the S.A.I.L console.", "/ai/portraits/novakidportrait.png:unique.1" ]
+			[ "System is down, please reboot.", "/ai/portraits/hubsnuggetportrait.png:unique.1"],
+			[ "Please reboot the system.", "/ai/portraits/hubsnuggetportrait.png:unique.1"],
+			[ "Reboot process remains uninitiated.", "/ai/portraits/hubsnuggetportrait.png:unique.1"],
+			[ "To make use of your S.A.I.L please reboot.", "/ai/portraits/hubsnuggetportrait.png:unique.1" ],
+			[ "Rebooting has shown to improve ship interaction satisfaction levels by 73%.", "/ai/portraits/hubsnuggetportrait.png:unique.1"],
+			[ "Rebooting requires a conscious entity to interact with the S.A.I.L console.", "/ai/portraits/hubsnuggetportrait.png:unique.1" ]
 		]
 	},
 
