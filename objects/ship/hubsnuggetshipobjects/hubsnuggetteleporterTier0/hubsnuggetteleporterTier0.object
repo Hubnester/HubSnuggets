@@ -25,6 +25,8 @@
 	"sitStatusEffects" : [ ],
 	"sitEffectEmitters" : [ "sleepbubbles" ],
 
+	"placementImage" : "novakidteleporterTier0.png:default",
+	"placementImagePosition" : [-32, 0],
 	"inventoryIcon" : "teleportericonTier0.png",
 	"orientations" : [
 		{

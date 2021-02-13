@@ -16,33 +16,34 @@ function update(dt)
 	hubUpdate(dt)
 	local shipType = world.getProperty("hubsnuggetShipType", "default")
 	if shipType ~= storage.shipType then
-		if not self.orientations[shipType].alreadyProcessed then
+		local orientations = self.orientations[shipType] or self.orientations["default"]
+		if not orientations.alreadyProcessed then
 			-- Convert all possible orientations image formats to the same one
-			if self.orientations[shipType].imageLayers then
-				self.orientations[shipType].images = self.orientations[shipType].imageLayers
-			elseif self.orientations[shipType].image then
-				self.orientations[shipType].images = {{image = self.orientations[shipType].image}}
-			elseif self.orientations[shipType].dualImage then
-				self.orientations[shipType].images = {{image = self.orientations[shipType].dualImage}}
+			if orientations.imageLayers then
+				orientations.images = orientations.imageLayers
+			elseif orientations.image then
+				orientations.images = {{image = orientations.image}}
+			elseif orientations.dualImage then
+				orientations.images = {{image = orientations.dualImage}}
 			else 
 				sb.logWarn("Unknown orientations image format detected, aborting image data loading for " .. tostring(object.name()) .. " of ship type " .. shipType)
 				storage.shipType = shipType
 				return
 			end
 			-- Convert all the image paths to absolute
-			for i, imageData in ipairs (self.orientations[shipType].images) do
+			for i, imageData in ipairs (orientations.images) do
 				if string.sub(imageData.image, 1, 1) ~= "/" then
-					self.orientations[shipType].images[i].image = self.directory .. imageData.image
+					orientations.images[i].image = self.directory .. imageData.image
 				end
 			end
 			-- Calculate the image render position
-			local imageSize = root.imageSize(self.orientations[shipType].images[1].image:gsub("<frame>", 0):gsub("<color>", "default"):gsub("<key>", 1))
-			local imageOffset = self.orientations[shipType].imagePosition
-			self.orientations[shipType].position = vec2.sub(self.position, vec2.div(vec2.sub(vec2.div(imageSize, 2), vec2.add(imageSize, imageOffset)), 8))
+			local imageSize = root.imageSize(orientations.images[1].image:gsub("<frame>", 0):gsub("<color>", "default"):gsub("<key>", 1))
+			local imageOffset = orientations.imagePosition
+			orientations.position = vec2.sub(self.position, vec2.div(vec2.sub(vec2.div(imageSize, 2), vec2.add(imageSize, imageOffset)), 8))
 			-- So we only need to process this stuff one time while the object stays loaded
-			self.orientations[shipType].alreadyProcessed = true
+			orientations.alreadyProcessed = true
 		end
-		object.setConfigParameter("renderData", self.orientations[shipType])
+		object.setConfigParameter("renderData", orientations)
 		storage.shipType = shipType
 	end
 	

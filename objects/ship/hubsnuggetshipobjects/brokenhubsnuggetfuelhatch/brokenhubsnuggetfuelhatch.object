@@ -17,6 +17,8 @@
 	"hylotlDescription" : "Fuel is the lifeblood of exploration.",
 	"novakidDescription" : "FTL fuel goes in here! When it's fixed...",
 
+	"placementImage" : "brokennovakidfuelhatch.png:default.0",
+	"placementImagePosition" : [-8, -16],
 	"inventoryIcon" : "fuelhatchicon.png",
 	"orientations" : [
 		{

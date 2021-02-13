@@ -18,6 +18,8 @@
 	"hylotlDescription" : "An elegant storage solution. It's not currently powered.",
 	"novakidDescription" : "A locker. Ain't much use 'til it's fixed.",
 	
+	"placementImage" : "novakidshiplockerTier0.png:default.0",
+	"placementImagePosition" : [-16, -8],
 	"inventoryIcon" : "shiplockericonTier0.png",
 	"orientations" : [
 		{

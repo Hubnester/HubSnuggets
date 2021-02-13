@@ -8,9 +8,9 @@ function init()
 	self.animationTimer = 0
 	self.doorTimer = 0
 	if objectAnimator.direction() == 1 then
-		self.direction = "?flipx"
-	else
 		self.direction = ""
+	else
+		self.direction = "?flipx"
 	end
 end
 

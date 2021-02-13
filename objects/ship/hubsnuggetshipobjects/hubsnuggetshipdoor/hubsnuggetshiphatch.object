@@ -17,6 +17,8 @@
 	"hylotlDescription" : "A basic ship hatch.",
 	"novakidDescription" : "A hatch, the type you'd find on a ship.",
 
+	"placementImage" : "novakidshiphatch.png:default",
+	"placementImagePosition" : [-16, -20],
 	"inventoryIcon" : "novakidshiphatchicon.png",
 	"orientations" : [
 		{

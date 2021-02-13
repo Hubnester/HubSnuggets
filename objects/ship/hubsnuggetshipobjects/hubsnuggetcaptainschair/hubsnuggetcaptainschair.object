@@ -19,6 +19,8 @@
 	"hylotlDescription" : "Sitting on the Captain's chair allows me to fly this ship.",
 	"novakidDescription" : "The Captain's chair. The guy who sits here decides where the ship goes! That's me!",
 
+	"placementImage" : "novakidcaptainschair.png:default?flipx",
+	"placementImagePosition" : [-12, 0],
 	"inventoryIcon" : "captainschairicon.png",
 	"orientations" : [
 		{
@@ -48,7 +50,7 @@
 	],
 	"hubsnuggetOrientations" : {
 		"default" : {
-			"image" : "novakidcaptainschair.png:<color>?flipx",
+			"image" : "novakidcaptainschair.png:<color>",
 			"imagePosition" : [-12, 0],
 			"frames" : 1,
 			"animationCycle" : 0.5

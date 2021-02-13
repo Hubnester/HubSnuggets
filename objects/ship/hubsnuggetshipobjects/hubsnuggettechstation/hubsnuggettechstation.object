@@ -22,6 +22,8 @@
 	"hylotlDescription" : "This console allows me to communicate with SAIL.",
 	"novakidDescription" : "This here station lets me talk with SAIL.",
 
+	"placementImage" : "novakidtechstation.png:default.0",
+	"placementImagePosition" : [-16, -8],
 	"inventoryIcon" : "novakidtechstationicon.png",
 	"orientations" : [
 		{

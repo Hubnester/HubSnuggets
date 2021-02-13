@@ -1,0 +1,66 @@
+{
+	"objectName" : "hubsnuggetshiplocker",
+	"colonyTags" : ["hubsnugget","storage"],
+	"printable" : false,
+	"rarity" : "Common",
+	"objectType" : "container",
+	"tooltipKind" : "container",
+
+	"category" : "storage",
+	"description" : "A locker. Store some stuff, why don't you?",
+	"shortdescription" : "Ship Locker",
+	"race" : "hubsnugget",
+	"lightColor" : [61, 88, 102],
+
+	"apexDescription" : "I wonder if there are any secrets inside this locker?",
+	"avianDescription" : "Could there be anything of value within this locker?",
+	"floranDescription" : "Floran ssearch Novakid locker for valuabless.",
+	"glitchDescription" : "Excited. Any items of interest inside I wonder?",
+	"humanDescription" : "A ship's locker.",
+	"hylotlDescription" : "Perhaps something useful is inside this locker.",
+	"novakidDescription" : "A safe place to store my loot.",
+
+	"placementImage" : "novakidshiplocker.png:default.0",
+	"placementImagePosition" : [-16, -8],
+	"inventoryIcon" : "shiplockericon.png",
+	"orientations" : [
+		{
+			"dualImage" : "/assetmissing.png",
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ],
+			"spaces" : [
+				[-2,1],  [-1,1],  [0,1],  [1,1],
+				[-2,0],  [-1,0],  [0,0],  [1,0],
+				[-2,-1], [-1,-1], [0,-1], [1,-1]
+			]
+		}
+	],
+	"hubsnuggetOrientations" : {
+		"default" : {
+			"imageLayers" : [ { "image" : "novakidshiplocker.png:<color>.<frame>", "fullbright" : true }, { "image" : "novakidshiplockerlit.png:<color>.<frame>" } ],
+			"imagePosition" : [-16, -8],
+			"frames" : 8,
+			"animationCycle" : 1.0
+		},
+		"black" : {
+			"imageLayers" : [ { "image" : "blacknovakidshiplocker.png:<color>.<frame>", "fullbright" : true }, { "image" : "blacknovakidshiplockerlit.png:<color>.<frame>" } ],
+			"imagePosition" : [-16, -8],
+			"frames" : 8,
+			"animationCycle" : 1.0
+		}
+	},
+
+	"openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+	"closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+	"slotCount" : 64,
+	"uiConfig" : "/interface/chests/chest<slots>.config",
+	"frameCooldown" : 11,
+	"autoCloseCooldown" : 3600,
+	
+	"scripts" : [
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua"
+	],
+	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
+	"scriptDelta" : 20,
+	"animationScriptDelta" : 1
+}

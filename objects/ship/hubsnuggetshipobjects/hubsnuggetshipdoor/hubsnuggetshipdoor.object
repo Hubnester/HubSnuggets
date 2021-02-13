@@ -17,6 +17,8 @@
 	"hylotlDescription" : "A basic ship door.",
 	"novakidDescription" : "A door, the type you'd find on a ship.",
 
+	"placementImage" : "novakidshipdoor.png:default",
+	"placementImagePosition" : [-20, 0],
 	"inventoryIcon" : "novakidshipdooricon.png",
 	"orientations" : [
 		{
