@@ -1,0 +1,31 @@
+{
+	"objectName" : "hubsnuggetshiprender",
+	"colonyTags" : ["misc"],
+	"printable" : false,
+	"rarity" : "Common",
+	"description" : "Renders the background of the snugget ship.",
+	"shortdescription" : "Ship Render",
+	"race" : "generic",
+	"smashOnBreak" : true,
+	"unbreakable" : true,
+
+	"category" : "wire",
+
+	"inventoryIcon" : "hubsnuggetshiprendericon.png",
+	"orientations" : [
+		{
+			"image" : "hubsnuggetshiprender.png:<color>",
+			"imagePosition" : [0, 0],
+
+			"spaceScan" : 0.1,
+			"metaBoundBox" : [-208, 0, 50, 34]	// edit this to bascially just cover the entire non-red section of the ship
+		}
+	],
+
+	"scripts" : [ "hubsnuggetshiprender.lua"],
+	"animationScripts" : ["hubsnuggetshiprenderanimation.lua"],
+	"scriptDelta" : 20,
+	"animationScriptDelta" : 20,
+	
+	"blockImageBase" : "/objects/ship/hubsnuggetshiprender/hubsnuggetshiprenderbase.png"
+}

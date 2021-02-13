@@ -175,7 +175,7 @@
 	],
 	
 	//hubsnugget unique stuff
-	"mouthPosition" : [0, -0.875],
+	"mouthPosition" : [0, -1.875],
 	"allowedCosmetics" : {
 		"hubsnuggetinvisback" : true,
 		"hubsnuggetinvishead" : true,

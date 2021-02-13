@@ -1,9 +1,7 @@
 require "/scripts/vec2.lua"
 
--- Shamelessly copy and pasted from FU lol (though i did make this for FU)
-
 function update()
-	if world.getProperty("ship.level", 1) ~= storage.shipLevel or world.getProperty("hub_snuggetShipType", "default") ~= storage.shipType then
+	if world.getProperty("ship.level", 0) ~= storage.shipLevel or world.getProperty("hubsnuggetShipType", "default") ~= storage.shipType then
 		local shipsConfig = root.assetJson("/universe_server.config").speciesShips["hubsnugget"]
 		if shipsConfig then
 			local shipConfigPath = shipsConfig[world.getProperty("ship.level", 0) + 1] or shipsConfig[#shipsConfig]
@@ -12,7 +10,7 @@ function update()
 			local snipLocation = string.find(reversedFile, "/")
 			local shipPathGsub = string.sub(shipConfigPath, -snipLocation + 1)
 			-- could cause errors, but the object shouldn't be there if errors could occur here
-			local backgroundOverlays = shipConfig.hub_backgroundOverlays[world.getProperty("hub_snuggetShipType", "default")]	
+			local backgroundOverlays = shipConfig.hub_backgroundOverlays[world.getProperty("hubsnuggetShipType", "default")]	
 			for i, overlay in ipairs (backgroundOverlays) do
 				if string.sub(overlay.image, 1, 1) ~= "/" then
 					backgroundOverlays[i].image = shipConfigPath:gsub(shipPathGsub, overlay.image)
@@ -56,7 +54,9 @@ function update()
 			object.setConfigParameter("backgroundOverlays", backgroundOverlays)
 			object.setConfigParameter("baseImageOffset", baseImageOffset[1])
 			storage.shipLevel = world.getProperty("ship.level", 0)
-			storage.shipType = world.getProperty("hub_snuggetShipType", "default")
+			storage.shipType = world.getProperty("hubsnuggetShipType", "default")
+			object.setConfigParameter("shipLevel", storage.shipLevel)
+			object.setConfigParameter("shipType", storage.shipType)
 		end
 	end
 end
