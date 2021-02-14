@@ -5,7 +5,7 @@
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "headwear",
-	"description" : "Hides the head armor appearance. ^red;DO NOT REMOVE!^reset;",
+	"description" : "Hides the head armor appearance.",
 	"shortdescription" : "Snugget Invisible Head",
 	"tooltipKind" : "armor",
 

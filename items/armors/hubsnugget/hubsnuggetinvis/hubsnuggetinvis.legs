@@ -5,7 +5,7 @@
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "legwear",
-	"description" : "Hides the leg armor appearance. ^red;DO NOT REMOVE!^reset;",
+	"description" : "Hides the leg armor appearance.",
 	"shortdescription" : "Snugget Invisible Legs",
 	"tooltipKind" : "armor",
 

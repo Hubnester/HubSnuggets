@@ -4,7 +4,7 @@
   "inventoryIcon" : "icons.png:back",
   "rarity" : "Common",
   "category" : "backwear",
-  "description" : "Hides the back armor appearance. ^red;DO NOT REMOVE!^reset;",
+  "description" : "Hides the back armor appearance.",
   "shortdescription" : "Snugget Invisible Back",
   "tooltipKind" : "back",
 
