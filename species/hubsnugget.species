@@ -12,7 +12,7 @@
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
 	"ouchNoises" : [ "/sfx/humanoid/novakidhurt_male2.ogg", "/sfx/humanoid/novakidhurt_female2.ogg" ],
-	"charGenTextLabels" : [ "Gas colour", "N/A", "N/A", "N/A", "", "Eye Color", "N/A", "N/A", "SNUGGET", "N/A" ],
+	"charGenTextLabels" : [ "Gas colour", "N/A", "N/A", "Cosmetic", "", "Eye Color", "N/A", "Cosmetic Color", "SNUGGET", "N/A" ],
 	"skull" : "/humanoid/novakid/dead.png",
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
@@ -101,7 +101,7 @@
 			"characterImage" : "/interface/title/novakidmale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -113,7 +113,7 @@
 			"characterImage" : "/interface/title/novakidfemale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -180,6 +180,9 @@
 		"hubsnuggetinvisback" : true,
 		"hubsnuggetinvishead" : true,
 		"hubsnuggetinvischest" : true,
-		"hubsnuggetinvislegs" : true
+		"hubsnuggetinvislegs" : true,
+		"hubsnuggetholidayhat" : true,
+		"hubsnuggetraindeerhat" : true,
+		"hubsnuggetclassyhat" : true
 	}
 }
