@@ -4,7 +4,7 @@
 	"charCreationTooltip" : {
 			"title" : "Snugget",
 			"subTitle" : "CH4",
-			"description" : "TODO"
+			"description" : "Snuggets are the mysterious pets of Novakid. Just like the Novakid, no one knows what they're made of, much less where they came from."
 	},
 
 	"statusEffects" : [ "novakidglow" ],

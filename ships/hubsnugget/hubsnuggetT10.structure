@@ -6,17 +6,7 @@
 		}
 	},
 
-	"backgroundOverlays" : [
-		{
-			"image" : "novakidT10.png",
-			"position" : [-10.64, 20.75],
-			"fullbright" : true
-		},
-		{
-			"image" : "novakidT10lit.png",
-			"position" : [-10.64, 20.75]
-		}
-	],
+	"backgroundOverlays" : [],
 	"hubsnuggetBackgroundOverlays" : {
 		"default" : [
 			{

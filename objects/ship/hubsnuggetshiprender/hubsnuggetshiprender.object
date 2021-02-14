@@ -18,7 +18,7 @@
 			"imagePosition" : [0, 0],
 
 			"spaceScan" : 0.1,
-			"metaBoundBox" : [-208, 0, 50, 34]	// edit this to bascially just cover the entire non-red section of the ship
+			"metaBoundBox" : [-390, 0, 50, 34]	// edit this to bascially just cover the entire non-red section of the ship
 		}
 	],
 
