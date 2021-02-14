@@ -3,5 +3,90 @@
 		"op" : "add",
 		"path" : "/animatedParts/parts/body/properties/fullbright",
 		"value" : true
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/parts/hubsnuggetCosmetic",
+		"value" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1],
+					"zLevel" : 1
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:duck.<frame><directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:stand.<frame><directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:run.<frame><directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:blink.<frame><directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:walk.<frame><directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:jump.<frame><directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:fall.<frame><directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:eat.<frame><directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:eatloop.<frame><directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:inspect.<frame><directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:swim.<frame><directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:sound.<frame><directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:sleep.<frame><directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:invisible.<frame><directives>"
+							}
+						}
+					}
+				}
+			}
 	}
 ]

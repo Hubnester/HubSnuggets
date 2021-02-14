@@ -11,5 +11,30 @@
 		"op" : "add",
 		"path" : "/baseParameters/scripts/-",
 		"value" : "/monsters/pets/snugget/hubpetsnugget.lua"
+	},
+	{
+		"op" : "add",
+		"path" : "/baseParameters/hubsnuggetCosmeticImageOverrides",
+		"value" : {
+			"hubsnuggetinvisback" : "/monsters/pets/snugget/hubsnuggetpetblankcosmetic.png",
+			"hubsnuggetinvishead" : "/monsters/pets/snugget/hubsnuggetpetblankcosmetic.png",
+			"hubsnuggetinvischest" : "/monsters/pets/snugget/hubsnuggetpetblankcosmetic.png",
+			"hubsnuggetinvislegs" : "/monsters/pets/snugget/hubsnuggetpetblankcosmetic.png"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/baseParameters/hubsnuggetBlankCosmetic",
+		"value" : "/monsters/pets/snugget/hubsnuggetpetblankcosmetic.png"
+	},
+	{
+		"op" : "add",
+		"path" : "/baseParameters/hubsnuggetCosmeticQueryRange",
+		"value" : 50
+	},
+	{
+		"op" : "add",
+		"path" : "/baseParameters/hubsnuggetCosmeticQueryCooldown",
+		"value" : 3
 	}
 ]

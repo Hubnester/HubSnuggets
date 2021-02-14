@@ -7,7 +7,7 @@ function init()
 	self.hubsnuggetConfig = root.assetJson("/species/hubsnugget.species")
 	self.hubsnuggetRace = player.species()
 	
-	if self.hubsnuggetRace == "hubsnugget" and not status.statusProperty("hubsnuggetJustCreated") then
+	if self.hubsnuggetRace == "hubsnugget" and not status.statusProperty("hubsnuggetAlreadyCreated") then
 		local slots = {"chest", "legs"}
 		for _, slot in ipairs (slots) do
 			local item = player.equippedItem(slot) or {}
@@ -16,7 +16,7 @@ function init()
 				player.setEquippedItem(slot, nil)
 			end
 		end
-		status.setStatusProperty("hubsnuggetJustCreated", true)
+		status.setStatusProperty("hubsnuggetAlreadyCreated", true)
 	end
 end
 

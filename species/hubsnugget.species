@@ -101,7 +101,7 @@
 			"characterImage" : "/interface/title/novakidmale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -113,7 +113,7 @@
 			"characterImage" : "/interface/title/novakidfemale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -183,6 +183,7 @@
 		"hubsnuggetinvislegs" : true,
 		"hubsnuggetholidayhat" : true,
 		"hubsnuggetraindeerhat" : true,
-		"hubsnuggetclassyhat" : true
+		"hubsnuggetclassyhat" : true,
+		"hubsnuggetbowtie" : true
 	}
 }
