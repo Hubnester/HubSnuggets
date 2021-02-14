@@ -1,0 +1,47 @@
+{
+	"config" : {
+		"shipUpgrades" : {
+			"capabilities" : ["teleport", "planetTravel", "systemTravel"],
+			"maxFuel" : 1000
+		}
+	},
+
+	"backgroundOverlays" : [
+		{
+			"image" : "novakidT10.png",
+			"position" : [-10.64, 20.75],
+			"fullbright" : true
+		},
+		{
+			"image" : "novakidT10lit.png",
+			"position" : [-10.64, 20.75]
+		}
+	],
+	"hubsnuggetBackgroundOverlays" : {
+		"default" : [
+			{
+				"image" : "default/novakidT10.png",
+				"position" : [-10.64, 20.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "default/novakidT10lit.png",
+				"position" : [-10.64, 20.75]
+			}
+		],
+		"black" : [
+			{
+				"image" : "black/novakidT10.png",
+				"position" : [-10.64, 20.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black/novakidT10lit.png",
+				"position" : [-10.64, 20.75]
+			}
+		]
+	},
+	
+	"blockKey" : "blockKey.config:blockKey",
+	"blockImage" : "novakidT10blocks.png"
+}

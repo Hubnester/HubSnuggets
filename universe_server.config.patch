@@ -2,6 +2,6 @@
 	{
 		"op" : "add",
 		"path" : "/speciesShips/hubsnugget",
-		"value" : ["/ships/hubsnugget/hubsnuggetT0.structure", "/ships/hubsnugget/hubsnuggetT1.structure", "/ships/hubsnugget/hubsnuggetT2.structure", "/ships/hubsnugget/hubsnuggetT3.structure", "/ships/hubsnugget/hubsnuggetT4.structure", "/ships/hubsnugget/hubsnuggetT5.structure", "/ships/hubsnugget/hubsnuggetT6.structure", "/ships/hubsnugget/hubsnuggetT7.structure", "/ships/hubsnugget/hubsnuggetT8.structure"]
+		"value" : ["/ships/hubsnugget/hubsnuggetT0.structure", "/ships/hubsnugget/hubsnuggetT1.structure", "/ships/hubsnugget/hubsnuggetT2.structure", "/ships/hubsnugget/hubsnuggetT3.structure", "/ships/hubsnugget/hubsnuggetT4.structure", "/ships/hubsnugget/hubsnuggetT5.structure", "/ships/hubsnugget/hubsnuggetT6.structure", "/ships/hubsnugget/hubsnuggetT7.structure", "/ships/hubsnugget/hubsnuggetT8.structure", "/ships/hubsnugget/hubsnuggetT9.structure", "/ships/hubsnugget/hubsnuggetT10.structure"]
 	}
 ]
