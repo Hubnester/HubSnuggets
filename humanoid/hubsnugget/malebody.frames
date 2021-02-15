@@ -13,11 +13,11 @@
 		]
 	},
 	"aliases" : {
-		"sit.1" : "duck.1",
 		"idle.1" : "stand.1",
 		"eatloop.1" : "eat.2",
 		"eatloop.2" : "eat.3",
 		"swimIdle.1" : "swim.6",
-		"lay.1" : "sleep.1"
+		"sit.1" : "invisible.1",
+		"lay.1" : "invisible.1"
 	}
 }

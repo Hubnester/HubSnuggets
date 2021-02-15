@@ -185,5 +185,9 @@
 		"hubsnuggetraindeerhat" : true,
 		"hubsnuggetclassyhat" : true,
 		"hubsnuggetbowtie" : true
+	},
+	"loungeableFrames" : {
+		"sit" : "duck",
+		"lay" : "sleep"
 	}
 }
