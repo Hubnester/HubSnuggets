@@ -49,16 +49,21 @@ function update(dt)
 				local gsubString = ":"
 				if sitType == "lay" then
 					gsubString = gsubString .. self.hubsnuggetConfig.loungeableFrames.lay or "sleep"
+					for i, imageData in ipairs (playerImage) do
+						imageData.image = imageData.image:gsub(":idle", gsubString) .. ((sitFlipped and "") or "?flipx")
+						imageData.position = {15.375, 18}
+						localAnimator.addDrawable(imageData, "object+1")
+					end
 				else
-					gsubString = gsubString .. self.hubsnuggetConfig.loungeableFrames.sit or "duck"
+					--gsubString = gsubString .. self.hubsnuggetConfig.loungeableFrames.sit or "duck"
 				end
-				for i, imageData in ipairs (playerImage) do
-					imageData.image = imageData.image:gsub(":idle", gsubString) .. ((sitFlipped and "") or "?flipx")
-					imageData.position = {15.375, 18}
-					localAnimator.addDrawable(imageData, "object+1")
-				end
-			elseif world.entityType(loungingIn) == "vehicle" then
 				
+			elseif world.entityType(loungingIn) == "vehicle" then
+				--[[for i, imageData in ipairs (playerImage) do
+					imageData.image = imageData.image:gsub(":idle", ":duck") .. ((sitFlipped and "") or "?flipx")
+					imageData.position = {15.375, 17}
+					localAnimator.addDrawable(imageData, "vehicle+133955590")
+				end]] -- Figure out the fuck the vechiles render layer is determined (the above is the render layer of the mech when you deploy)
 			end
 		end
 	end
