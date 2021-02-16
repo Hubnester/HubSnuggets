@@ -42,6 +42,10 @@
 		"black" : {
 			"dualImage" : "blacknovakidshipdoor.png:default",
 			"imagePosition" : [-20, 0]
+		},
+		"black2" : {
+			"dualImage" : "black2novakidshipdoor.png:default",
+			"imagePosition" : [-20, 0]
 		}
 	},
 	

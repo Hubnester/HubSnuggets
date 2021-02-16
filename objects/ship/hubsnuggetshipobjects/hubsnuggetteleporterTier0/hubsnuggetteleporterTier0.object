@@ -62,6 +62,12 @@
 			"imagePosition" : [-32, 0],
 			"frames" : 1,
 			"animationCycle" : 0.5
+		},
+		"black2" : {
+			"image" : "black2novakidteleporterTier0.png:<color>",
+			"imagePosition" : [-32, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5
 		}
 	},
 

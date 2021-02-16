@@ -29,6 +29,17 @@
 				"image" : "black/novakidT10lit.png",
 				"position" : [-10.64, 20.75]
 			}
+		],
+		"black2" : [
+			{
+				"image" : "black2/novakidT10.png",
+				"position" : [-10.64, 20.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black2/novakidT10lit.png",
+				"position" : [-10.64, 20.75]
+			}
 		]
 	},
 	

@@ -49,6 +49,12 @@
 			"imagePosition" : [-16, -8],
 			"frames" : 32,
 			"animationCycle" : 3.0
+		},
+		"black2" : {
+			"imageLayers" : [ { "image" : "black2novakidtechstation.png:<color>.<frame>", "fullbright" : true }, { "image" : "black2novakidtechstationlit.png:<color>.<frame>" } ],
+			"imagePosition" : [-16, -8],
+			"frames" : 32,
+			"animationCycle" : 3.0
 		}
 	},
 

@@ -38,6 +38,10 @@
 		"black" : {
 			"dualImage" : "blacknovakidshiphatch.png:default",
 			"imagePosition" : [-16, -20]
+		},
+		"black2" : {
+			"dualImage" : "black2novakidshiphatch.png:default",
+			"imagePosition" : [-16, -20]
 		}
 	},
 

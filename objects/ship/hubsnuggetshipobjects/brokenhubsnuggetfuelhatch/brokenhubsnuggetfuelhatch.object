@@ -44,6 +44,12 @@
 			"imagePosition" : [-8, -16],
 			"frames" : 12,
 			"animationCycle" : 1
+		},
+		"black2" : {
+			"imageLayers" : [ { "image" : "black2brokennovakidfuelhatch.png:<color>.<frame>", "fullbright" : true }, { "image" : "black2brokennovakidfuelhatchlit.png:<color>.<frame>" } ],
+			"imagePosition" : [-8, -16],
+			"frames" : 12,
+			"animationCycle" : 1
 		}
 	},
 	

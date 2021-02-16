@@ -91,6 +91,12 @@
 			"imagePosition" : [-32, 0],
 			"frames" : 1,
 			"animationCycle" : 0.5
+		},
+		"black2" : {
+			"imageLayers" : [ { "image" : "black2novakidteleporter.png:<color>", "fullbright" : true }, { "image" : "black2novakidteleporterlit.png:<color>" } ],
+			"imagePosition" : [-32, 0],
+			"frames" : 1,
+			"animationCycle" : 0.5
 		}
 	},
 	

@@ -51,6 +51,28 @@
 				"image" : "black/novakidt8_2lit.png",
 				"position" : [11.61, 20.75]
 			}
+		],
+		"black2" : [
+			{
+				"image" : "black2/novakidt8_1.png",
+				"position" : [131.86, 20.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black2/novakidt8_1lit.png",
+				"position" : [131.86, 20.75]
+			},
+			
+			{
+				"image" : "black2/novakidt8_2.png",
+				"position" : [11.61, 20.75],
+				"fullbright" : true
+			},
+			
+			{
+				"image" : "black2/novakidt8_2lit.png",
+				"position" : [11.61, 20.75]
+			}
 		]
 	},
 

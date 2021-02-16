@@ -29,6 +29,17 @@
 				"image" : "black/novakidt7lit.png",
 				"position" : [12.75, 20.75]
 			}
+		],
+		"black2" : [
+			{
+				"image" : "black2/novakidt7.png",
+				"position" : [12.75, 20.75],
+				"fullbright" : true
+			},
+			{
+				"image" : "black2/novakidt7lit.png",
+				"position" : [12.75, 20.75]
+			}
 		]
 	},
 
