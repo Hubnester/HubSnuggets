@@ -5,7 +5,7 @@
   Features: 
   - Snugget Race
   - Snuggets are now fullbright",
-  "includes" : [],
+  "includes" : ["FrackinUniverse", "FrackinRaces", "FrackinShip", "ztarbound"],
   "name" : "HubSnuggets",
   "priority" : 1,
   "requires" : [],

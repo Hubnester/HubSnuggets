@@ -1,0 +1,10 @@
+[
+	{
+		"op" : "add",
+		"path" : "/hubsnugget",
+		"value" : {
+			//since their ship objects are basically just novakid ones anyway
+			"race" : "novakid"
+		}
+	}
+]
