@@ -63,6 +63,7 @@
 	"animation" : "/objects/ship/techstation.animation",
 	"scripts" : [
 		"/objects/spawner/techstation.lua",
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggettechstation/hubsnuggettechstation.lua",
 		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua"
 	],
 	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
@@ -90,5 +91,14 @@
 		]
 	},
 
-	"uniqueId" : "techstation"
+	"uniqueId" : "techstation",
+	
+	"zbCompat" : {
+		"detectionItem" : "fm_musicplayer",		// if this item exists, it is assumed that Ztarbound or Frackin Universe is installed
+		"scripts" : ["/objects/scripts/customtechstation.lua"],
+		"configOverrides" : {
+			"interactAction" : "ScriptPane",
+			"interactData" : "/zb/newSail/newSail.config"
+		}
+	}
 }
