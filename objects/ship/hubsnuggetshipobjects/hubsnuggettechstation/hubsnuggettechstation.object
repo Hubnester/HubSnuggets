@@ -63,8 +63,8 @@
 	"animation" : "/objects/ship/techstation.animation",
 	"scripts" : [
 		"/objects/spawner/techstation.lua",
-		"/objects/ship/hubsnuggetshipobjects/hubsnuggettechstation/hubsnuggettechstation.lua",
-		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua"
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua",
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggettechstation/hubsnuggettechstation.lua"
 	],
 	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
 	"scriptDelta" : 20,

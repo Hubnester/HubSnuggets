@@ -125,7 +125,7 @@ With Frackin Races or Frackin Universe:
 			"characterImage" : "/interface/title/novakidmale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -137,7 +137,7 @@ With Frackin Races or Frackin Universe:
 			"characterImage" : "/interface/title/novakidfemale.png",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
-			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie" ],
+			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat" ],
 			"facialHairGroup" : "",
 			"facialHair" : [ ],
 			"facialMaskGroup" : "",
@@ -208,7 +208,8 @@ With Frackin Races or Frackin Universe:
 		"hubsnuggetholidayhat" : true,
 		"hubsnuggetraindeerhat" : true,
 		"hubsnuggetclassyhat" : true,
-		"hubsnuggetbowtie" : true
+		"hubsnuggetbowtie" : true,
+		"hubsnuggetwizardhat" : true
 	},
 	"loungeableFrames" : {
 		"sit" : "duck",
