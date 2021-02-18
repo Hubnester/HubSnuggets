@@ -5,9 +5,11 @@ function init()
 	hubInit()
 	
 	self.hubsnuggetConfig = root.assetJson("/species/hubsnugget.species")
-	self.hubsnuggetConfig.loungeableFrames = self.hubsnuggetConfig.loungeableFrames or {}
-	self.hubsnuggetRace = player.species()
+	self.hubsnuggetConfig.allowedCosmetics = self.hubsnuggetConfig.allowedCosmetics or {}
 	self.hubsnuggetEntityId = entity.id()
+	self.hubsnuggetRace = player.species()
+	
+	message.setHandler("hubsnuggetIsLounging", player.isLounging)
 	
 	if self.hubsnuggetRace == "hubsnugget" and not status.statusProperty("hubsnuggetAlreadyCreated") then
 		local slots = {"chest", "legs"}
@@ -40,30 +42,29 @@ function update(dt)
 		
 		-- Snugget loungeable player rendering
 		local loungingIn = player.loungingIn()
-		if loungingIn then
-			local playerImage = world.entityPortrait(self.hubsnuggetEntityId, "full") or {}
-			local playerPosition = entity.position()
-			if world.entityType(loungingIn) == "object" then
-				local sitType = world.getObjectParameter(loungingIn, "sitOrientation")
-				local direction = world.getObjectParameter(loungingIn, "direction")
-				local gsubString = ":"
-				if sitType == "lay" then
-					gsubString = gsubString .. self.hubsnuggetConfig.loungeableFrames.lay or "sleep"
-					for i, imageData in ipairs (playerImage) do
-						imageData.image = imageData.image:gsub(":idle", gsubString) .. ((sitFlipped and "") or "?flipx")
-						imageData.position = {15.375, 18}
-						localAnimator.addDrawable(imageData, "object+1")
-					end
-				else
-					--gsubString = gsubString .. self.hubsnuggetConfig.loungeableFrames.sit or "duck"
+		if loungingIn and world.entityType(loungingIn) == "object" and world.getObjectParameter(loungingIn, "sitOrientation") == "lay" then
+			local playerImages = world.entityPortrait(self.hubsnuggetEntityId, "full") or {}
+			local playerGender = player.gender()
+			local sitFlipped = world.getObjectParameter(loungingIn, "direction") == "right" and true
+			if world.getObjectParameter(loungingIn, "sitFlipDirection") then
+				sitFlipped = not sitFlipped
+			end
+			local cosmeticItem = player.equippedItem("legsCosmetic")
+			local cosmeticItemData = (cosmeticItem and root.itemConfig(cosmeticItem.name)) or {config = {}}
+			local renderImages = {}
+			for _, imageData in ipairs (playerImages) do
+				-- Not going to bother making this configurable since it's path is likely completely hardcoded
+				if string.find(imageData.image or "", "/humanoid/hubsnugget/" .. playerGender .. "body.png") then
+					imageData.fullbright = true
+					table.insert(renderImages, imageData)
+				elseif cosmeticItemData.config[playerGender.."Frames"] and string.find(imageData.image or "", cosmeticItemData.config[playerGender.."Frames"]) then
+					table.insert(renderImages, imageData)
 				end
-				
-			elseif world.entityType(loungingIn) == "vehicle" then
-				--[[for i, imageData in ipairs (playerImage) do
-					imageData.image = imageData.image:gsub(":idle", ":duck") .. ((sitFlipped and "") or "?flipx")
-					imageData.position = {15.375, 17}
-					localAnimator.addDrawable(imageData, "vehicle+133955590")
-				end]] -- Figure out the fuck the vechiles render layer is determined (the above is the render layer of the mech when you deploy)
+			end
+			for _, renderData in ipairs (renderImages) do
+				renderData.image = renderData.image:gsub(":idle", ":" .. self.hubsnuggetConfig.layFrame or "sleep") .. ((sitFlipped and "?flipx") or "")
+				renderData.position = self.hubsnuggetConfig.layImagePosition or {16, 18}
+				localAnimator.addDrawable(renderData, "object+1")
 			end
 		end
 	end

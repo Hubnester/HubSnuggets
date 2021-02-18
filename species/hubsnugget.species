@@ -200,6 +200,7 @@ With Frackin Races or Frackin Universe:
 	
 	//hubsnugget unique stuff
 	"mouthPosition" : [0, -1.875],
+	"loungingMouthPosition" : [0, 0.75],
 	"allowedCosmetics" : {
 		"hubsnuggetinvisback" : true,
 		"hubsnuggetinvishead" : true,
@@ -211,8 +212,6 @@ With Frackin Races or Frackin Universe:
 		"hubsnuggetbowtie" : true,
 		"hubsnuggetwizardhat" : true
 	},
-	"loungeableFrames" : {
-		"sit" : "duck",
-		"lay" : "sleep"
-	}
+	"layFrame" : "sleep",
+	"layImagePosition" : [16, 18]	// Honestly not sure why it's this value, it just is
 }

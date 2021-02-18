@@ -20,7 +20,6 @@ function init()
 			for _, script in ipairs(zbCompat.scripts or {}) do
 				require(script)
 			end
-			sb.logInfo("ZB Compat Applied")
 		elseif zbCompatApplied then
 			local oldParameters = config.getParameter("zbCompatOldParameters", {})
 			for parameter, oldData in pairs (oldParameters) do
