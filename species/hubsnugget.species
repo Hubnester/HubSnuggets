@@ -122,7 +122,7 @@ With Frackin Races or Frackin Universe:
 		{
 			"name" : "male",
 			"image" : "/interface/title/male.png",
-			"characterImage" : "/interface/title/novakidmale.png",
+			"characterImage" : "/humanoid/hubsnugget/malebody.png:sit.1?scalenearest=0.75",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
 			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat" ],
@@ -134,7 +134,7 @@ With Frackin Races or Frackin Universe:
 		{
 			"name" : "female",
 			"image" : "/interface/title/female.png",
-			"characterImage" : "/interface/title/novakidfemale.png",
+			"characterImage" : "/humanoid/hubsnugget/femalebody.png:sit.1?scalenearest=0.75",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
 			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat" ],
