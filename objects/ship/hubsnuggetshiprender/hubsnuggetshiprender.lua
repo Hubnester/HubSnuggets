@@ -12,7 +12,7 @@ function update()
 			local snipLocation = string.find(reversedFile, "/")
 			local shipPathGsub = string.sub(shipConfigPath, -snipLocation + 1)
 			-- could cause errors, but the object shouldn't be there if errors could occur here
-			local backgroundOverlays = shipConfig.hubsnuggetBackgroundOverlays[shipType]	
+			local backgroundOverlays = shipConfig.hubsnuggetBackgroundOverlays[shipType] or shipConfig.hubsnuggetBackgroundOverlays.default
 			for i, overlay in ipairs (backgroundOverlays) do
 				if string.sub(overlay.image, 1, 1) ~= "/" then
 					backgroundOverlays[i].image = shipConfigPath:gsub(shipPathGsub, overlay.image)

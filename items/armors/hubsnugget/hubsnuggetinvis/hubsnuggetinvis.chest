@@ -5,7 +5,7 @@
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "chestwear",
-	"description" : "Hides the chest armor appearance.",
+	"description" : "Hides the chest armor appearance. Made for snuggets. Usable by anyone.",
 	"shortdescription" : "Snugget Invisible Chest",
 	"tooltipKind" : "armor",
 	"consumeOnPickup" : true,

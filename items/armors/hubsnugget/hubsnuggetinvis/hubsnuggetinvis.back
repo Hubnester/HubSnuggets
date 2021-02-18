@@ -4,7 +4,7 @@
   "inventoryIcon" : "icons.png:back",
   "rarity" : "Common",
   "category" : "backwear",
-  "description" : "Hides the back armor appearance.",
+  "description" : "Hides the back armor appearance. Made for snuggets. Usable by anyone.",
   "shortdescription" : "Snugget Invisible Back",
   "tooltipKind" : "back",
 

@@ -101,18 +101,8 @@ With Frackin Races or Frackin Universe:
 
 // Furniture Table 2
 			{ "item" : "novakidstoragelocker" },
-			{ "item" : "novakidshipdoor" },
-			{ "item" : "novakidshiphatch" },
-
-// Spinning Wheel
-			{ "item" : "novakidfancychest" },
-			{ "item" : "novakidfancypants" },
-			{ "item" : "novakidjacket" },
-			{ "item" : "novakidjacketpants" },
-			{ "item" : "novakidsuspenders" },
-			{ "item" : "novakidsuspenderspants" },
-			{ "item" : "novakidwaistcoat" },
-			{ "item" : "novakidblackpants" }
+			{ "item" : "hubsnuggetshipdoor" },
+			{ "item" : "hubsnuggethiphatch" }
 		]
 	},
 	"altOptionAsUndyColor" : true,
@@ -134,7 +124,7 @@ With Frackin Races or Frackin Universe:
 		{
 			"name" : "female",
 			"image" : "/interface/title/female.png",
-			"characterImage" : "/humanoid/hubsnugget/femalebody.png:sit.1?scalenearest=0.75",
+			"characterImage" : "/humanoid/hubsnugget/femalebody.png:sit.1?replace;F5B204=12C2E8;FDE03F=56EBF8;FBF4B0=C1FBFC;FFFCDA=E2FEFE;FFFFFF=FFFFFF;FDDE34=56EBF8;937018=005844;AC8523=039271?scalenearest=0.75",
 			"hair" : [ "invis" ],
 			"shirt" : [ "hubsnuggetinvischest" ],
 			"pants" : [ "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat" ],

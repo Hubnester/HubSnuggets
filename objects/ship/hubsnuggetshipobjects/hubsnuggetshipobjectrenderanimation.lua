@@ -62,7 +62,7 @@ function update()
 		-- Render the object
 		for i, imageData in ipairs (renderData.images) do
 				localAnimator.addDrawable({
-					image = imageData.image:gsub("<frame>", frame):gsub("<color>", "default"):gsub("<key>", 1) .. self.direction,
+					image = imageData.image:gsub("<frame>", frame):gsub("<color>", "default"):gsub("<key>", frame) .. self.direction,
 					position = renderData.position,
 					fullbright = imageData.fullbright
 				}, "object+" .. ((doorstate and 5) or (i - 1)))

@@ -1,0 +1,67 @@
+{
+	"objectName" : "hubsnuggetstoragelocker",
+	"colonyTags" : ["hubsnugget","storage"],
+	"rarity" : "Rare",
+	"category" : "storage",
+	"price" : 180,
+	"printable" : false,
+	"objectType" : "container",
+	"tooltipKind" : "container",
+	"description" : "A nice, spacious, wall-mounted storage solution.",
+	"shortdescription" : "Snugget Storage Locker",
+	"race" : "hubsnugget",
+	"health" : 1.5,
+
+	"apexDescription" : "A locker made from metal.",
+	"avianDescription" : "A place to keep your things.",
+	"floranDescription" : "Floran can ssstuff things into locker.",
+	"glitchDescription" : "Neutral. A metallic storage locker.",
+	"humanDescription" : "It's an industrial looking storage locker.",
+	"hylotlDescription" : "Somewhere to store personal belongings.",
+	"novakidDescription" : "A locker in the wall.",
+	
+	"placementImage" : "novakidstoragelocker.png:default.0",
+	"placementImagePosition" : [-16, -8],
+	"inventoryIcon" : "icon.png",
+	"orientations" : [
+		{
+			"dualImage" : "/assetmissing.png",
+			"spaceScan" : 0.1,
+			"anchors" : [ "background" ],
+			"spaces" : [
+				[-2,1],  [-1,1],  [0,1],  [1,1],
+				[-2,0],  [-1,0],  [0,0],  [1,0],
+				[-2,-1], [-1,-1], [0,-1], [1,-1]
+			]
+		}
+	],
+	"hubsnuggetOrientations" : {
+		"default" : {
+			"image" : "novakidstoragelocker.png:<color>.<key>",
+			"imagePosition" : [-16, -8]
+		},
+		"black" : {
+			"image" : "blacknovakidstoragelocker.png:<color>.<key>",
+			"imagePosition" : [-16, -8]
+		},
+		"black2" : {
+			"image" : "black2novakidstoragelocker.png:<color>.<key>",
+			"imagePosition" : [-16, -8]
+		}
+	},
+
+	"openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+	"closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+	"slotCount" : 48,
+	"uiConfig" : "/interface/chests/chest<slots>.config",
+	"frameCooldown" : 5,
+	"openFrameIndex" : 4,
+	"autoCloseCooldown" : 3600,
+	
+	"scripts" : [
+		"/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrender.lua"
+	],
+	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
+	"scriptDelta" : 20,
+	"animationScriptDelta" : 1
+}

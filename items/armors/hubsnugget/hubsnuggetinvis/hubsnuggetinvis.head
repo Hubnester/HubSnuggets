@@ -5,7 +5,7 @@
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "headwear",
-	"description" : "Hides the head armor appearance.",
+	"description" : "Hides the head armor appearance. Made for snuggets. Usable by anyone.",
 	"shortdescription" : "Snugget Invisible Head",
 	"tooltipKind" : "armor",
 
