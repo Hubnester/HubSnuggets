@@ -1,0 +1,27 @@
+[
+	[
+		{
+			"op" : "add",
+			"path" : "/hubsnuggetproto",
+			"value" : {
+				"stats" : {
+					"energy" : 3,
+					"protection" : 3
+				},
+				"partParameters" : {},
+				"partImages" : {
+					"bodyBack" : "body/novakidproto_back.png",
+					"bodyFront" : "body/novakidproto_front.png"
+				},
+				"defaultPrimaryColors" : ["909c4f", "5f6c37", "414d28", "1b2211"],
+				"defaultSecondaryColors" : ["c0ab5e", "9b7e14", "6b5509", "342804"],
+				"animationCustom" : {
+					"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+						"sitPosition" : [0.8, 0.625]
+					}}}}
+				}
+			}
+		}
+	]
+	// Frackin Universe compatibility
+]

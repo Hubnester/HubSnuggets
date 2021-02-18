@@ -1,0 +1,15 @@
+{
+	"itemName" : "mechbodyhubsnuggetproto",
+	"price" : 6400,
+	"maxStack" : 1,
+	"rarity" : "Rare",
+	"category" : "mechPart",
+	"tooltipKind" : "mechbody",
+	"builder" : "/items/buildscripts/buildmechpart.lua",
+	"inventoryIcon" : "mechbodynovakidproto.png",
+	"description" : "A prototype open-front mech body with the seat height modified for snuggets.",
+	"shortdescription" : "Marshal-00 Mech Body (Modified)",
+	"itemTags" : [ ],
+
+	"mechPart" : ["body", "hubsnuggetproto"]
+}

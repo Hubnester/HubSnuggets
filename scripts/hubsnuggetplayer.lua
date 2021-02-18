@@ -57,6 +57,7 @@ function update(dt)
 				if string.find(imageData.image or "", "/humanoid/hubsnugget/" .. playerGender .. "body.png") then
 					imageData.fullbright = true
 					table.insert(renderImages, imageData)
+				-- Just uses the config since changing the frames parameter doesn't change the image
 				elseif cosmeticItemData.config[playerGender.."Frames"] and string.find(imageData.image or "", cosmeticItemData.config[playerGender.."Frames"]) then
 					table.insert(renderImages, imageData)
 				end

@@ -6,18 +6,18 @@
 			"subTitle" : "CH4",
 			"description" : "Snuggets are the mysterious pets of Novakid. Just like the Novakid, no one knows what they're made of, much less where they came from.
 
-With Frackin Races or Frackin Universe:
-^orange;Diet^reset;: Any
 
+
+^orange;Diet^reset;: Any
 ^orange;Perks^reset;:
-  Energy x^green;1.2^reset;, +^green;25^reset;% Knockback Resist, +^green;5^reset;% Speed
-  ^green;Resist^reset;: +^green;25^reset;% Fire, +^green;20^reset;% Ice, +^green;40^reset;% Radiation
+  Energy x^green;1.2^reset;, +^green;5^reset;% Speed
+  ^green;Resist^reset;: +^green;25^reset;% Fire, +^green;20^reset;% Ice, +^green;40^reset;% Radiation, +^green;25^reset;% Knockback
   ^cyan;Immune^reset;: Burning, Radiation Burn
 
 ^orange;Environment^reset;:
   ^green;Radioactive^reset; biomes: gain Energy & Health x^green;1.15^reset;
-  ^green;Regenerate^reset; from sunlight when fed. +^green;20^reset;% E. Regen.
-  Night regen ^red;consumes food^reset; and Energy x^red;0.75^reset;
+  Sunlight: ^green;Regenerate^reset; when fed, +^green;20^reset;% E. Regen.
+  Night: Regen ^red;consumes food^reset;, Energy x^red;0.75^reset;
 
 ^orange;Weapons^reset;:
   Pistol (single): Damage x^green;1.09^reset;

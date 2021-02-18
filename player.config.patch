@@ -7,7 +7,7 @@
 	{
 		"op" : "add",
 		"path" : "/deploymentConfig/speciesStarterMechBody/hubsnugget",
-		"value" : "mechbodynovakidproto"
+		"value" : "mechbodyhubsnuggetproto"
 	},
 	{
 		"op" : "add",
