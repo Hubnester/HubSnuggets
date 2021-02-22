@@ -1,0 +1,9 @@
+{
+	"name" : "hubsnuggetcolor",
+	"effectConfig" : {
+		"rainbowOrder" : [9, 6, 1, 5, 4, 10, 3, 2, 8, 7]	// Maybe improve this at some point
+	},
+	"defaultDuration" : 5,
+
+	"scripts" : ["hubsnuggetcolor.lua"]
+}

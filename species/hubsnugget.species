@@ -31,7 +31,7 @@
   ^red;Resist^reset;: -^red;15^reset;% Physical, -^red;20^reset;%Electric, -^red;40^reset;% Shadow"
 	},
 
-	"statusEffects" : [ "novakidglow" ],
+	"statusEffects" : [ "novakidglow", "hubsnuggetcolor" ],
 
 	"humanoidConfig" : "/species/hubsnuggetoid.config",
 	"nameGen" : [ "/species/novakidnamegen.config:names", "/species/novakidnamegen.config:names" ],
@@ -135,7 +135,7 @@
 		}
 	],
 	"bodyColor" : [
-		// The colours are darkest to lightest, body -> eyes -> mouth
+		// The colours are darkest to lightest, body -> mouth
 		// Yellow
 		{ "F5B204" : "F5B204", "FDE03F" : "FDE03F", "FBF4B0" : "FBF4B0", "FFFCDA" : "FFFCDA",  "FFFFFF" : "FFFFFF", "FDDE34" : "FDDE34"},
 		// Blue
@@ -158,33 +158,29 @@
 		{ "F5B204" : "47D7C2", "FDE03F" : "A0F3E3", "FBF4B0" : "B6FDEF", "FFFCDA" : "E9FFFB",  "FFFFFF" : "FFFFFF", "FDDE34" : "A3F2E4"}
 	],
 	"undyColor" : [
-		{ "f32200" : "FFDCC4", "dc1f00" : "FFB98F", "be1b00" : "C1695F", "951500" : "7E3F38" },
-		{ "f32200" : "FFFFE7", "dc1f00" : "FFE48E", "be1b00" : "C1AA5C", "951500" : "7C7135" },
-		{ "f32200" : "F6F0D3", "dc1f00" : "DAD39B", "be1b00" : "A7A270", "951500" : "6B6B47" },
-		{ "f32200" : "FFFFE0", "dc1f00" : "E7EFA1", "be1b00" : "ABB573", "951500" : "697447" },
-		{ "f32200" : "EEFFDC", "dc1f00" : "B1E994", "be1b00" : "7CAD69", "951500" : "4F7B43" },
-		{ "f32200" : "C7DEBC", "dc1f00" : "90BC80", "be1b00" : "648B5A", "951500" : "3A5D35" },
-		{ "f32200" : "DAFFE5", "dc1f00" : "97ECB0", "be1b00" : "6BB383", "951500" : "417356" },
-		{ "f32200" : "DBFFFE", "dc1f00" : "99EEDB", "be1b00" : "6DB4A9", "951500" : "427470" },
-		{ "f32200" : "D4FDFF", "dc1f00" : "85CCF5", "be1b00" : "558DB2", "951500" : "36627C" },
-		{ "f32200" : "D0D0FF", "dc1f00" : "9290F8", "be1b00" : "6060A9", "951500" : "43396B" },
-		{ "f32200" : "FFD1FF", "dc1f00" : "D191DE", "be1b00" : "95629C", "951500" : "603B61" },
-		{ "f32200" : "FFF4FF", "dc1f00" : "FFCDEA", "be1b00" : "E19CC4", "951500" : "B8739B" },
-		{ "f32200" : "FFFAF6", "dc1f00" : "FBD5CF", "be1b00" : "D9A49E", "951500" : "B07B74" },
-		{ "f32200" : "CECBC2", "dc1f00" : "A89B89", "be1b00" : "74665A", "951500" : "463D34" },
-		{ "f32200" : "B4B3AD", "dc1f00" : "8A897A", "be1b00" : "4E4F42", "951500" : "2C2915" },
-		{ "f32200" : "FFFFFF", "dc1f00" : "F2EFF3", "be1b00" : "A6A4AE", "951500" : "818181" }
+		{}
 	],
 	"hairColor" : [
+		// The colours are darkest to lightest
+		// Yellow
 		{ "937018" : "937018", "AC8523" : "AC8523" },
+		// Blue
 		{ "937018" : "005844", "AC8523" : "039271" },
+		// Blue Grey
 		{ "937018" : "222D33", "AC8523" : "4E6877" },
+		// Green
 		{ "937018" : "004D00", "AC8523" : "097E09" },
+		// Light Green
 		{ "937018" : "2D510D", "AC8523" : "528129" },
+		// Orange
 		{ "937018" : "40110A", "AC8523" : "944033" },
+		// Pink
 		{ "937018" : "760A7C", "AC8523" : "A52FAB" },
+		// Purple
 		{ "937018" : "340E52", "AC8523" : "6F349D" },
+		// Red
 		{ "937018" : "973205", "AC8523" : "C35321" },
+		// Turquoise
 		{ "937018" : "005844", "AC8523" : "039271" }
 	],
 	
@@ -203,5 +199,5 @@
 		"hubsnuggetwizardhat" : true
 	},
 	"layFrame" : "sleep",
-	"layImagePosition" : [16, 18]	// Honestly not sure why it's this value, it just is
+	"layImagePosition" : [16, 18]	// Honestly not sure why it's this value, it just seems to be this
 }

@@ -8,6 +8,7 @@ function init()
 	self.hubsnuggetConfig.allowedCosmetics = self.hubsnuggetConfig.allowedCosmetics or {}
 	self.hubsnuggetEntityId = entity.id()
 	self.hubsnuggetRace = player.species()
+	self.hubsnuggetGender = player.gender()
 	
 	message.setHandler("hubsnuggetIsLounging", player.isLounging)
 	
@@ -44,7 +45,6 @@ function update(dt)
 		local loungingIn = player.loungingIn()
 		if loungingIn and world.entityType(loungingIn) == "object" and world.getObjectParameter(loungingIn, "sitOrientation") == "lay" then
 			local playerImages = world.entityPortrait(self.hubsnuggetEntityId, "full") or {}
-			local playerGender = player.gender()
 			local sitFlipped = world.getObjectParameter(loungingIn, "direction") == "right" and true
 			if world.getObjectParameter(loungingIn, "sitFlipDirection") then
 				sitFlipped = not sitFlipped
@@ -54,11 +54,11 @@ function update(dt)
 			local renderImages = {}
 			for _, imageData in ipairs (playerImages) do
 				-- Not going to bother making this configurable since it's path is likely completely hardcoded
-				if string.find(imageData.image or "", "/humanoid/hubsnugget/" .. playerGender .. "body.png") then
+				if string.find(imageData.image or "", "/humanoid/hubsnugget/" .. self.hubsnuggetGender .. "body.png") then
 					imageData.fullbright = true
 					table.insert(renderImages, imageData)
 				-- Just uses the config since changing the frames parameter doesn't change the image
-				elseif cosmeticItemData.config[playerGender.."Frames"] and string.find(imageData.image or "", cosmeticItemData.config[playerGender.."Frames"]) then
+				elseif cosmeticItemData.config[self.hubsnuggetGender .. "Frames"] and string.find(imageData.image or "", cosmeticItemData.config[self.hubsnuggetGender .. "Frames"]) then
 					table.insert(renderImages, imageData)
 				end
 			end

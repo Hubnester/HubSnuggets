@@ -22,6 +22,50 @@
 				}
 			}
 		}
-	]
+	],
 	// Frackin Universe compatibility
+	[
+		// To check if FU is installed
+		{
+			"op" : "test",
+			"path" : "/fubrute"
+		},
+		{
+			"op": "add",
+			"path": "/hubsnuggetproto/stats/mechMass",
+			"value": 1
+		},
+		{
+			"op": "add",
+			"path": "/hubsnuggetproto/stats/healthBonus",
+			"value": 0.85
+		},
+		{
+			"op": "add",
+			"path": "/hubsnuggetproto/stats/energyBonus",
+			"value": 1.2
+		},
+		{
+			"op": "replace",
+			"path": "/hubsnuggetproto/stats/energy",
+			"value": 2
+		},
+		{
+			"op": "replace",
+			"path": "/hubsnuggetproto/stats/protection",
+			"value": 1
+		},
+		{
+			"op": "add",
+			"path": "/hubsnuggetproto/partParameters/hazardImmunities",
+			"value": [
+				"coldweathernew",
+				"ffbiomecold0",
+				"desertweathernew",
+				"jungleheatweather",
+				"poisonweathernewbiome",
+				"poisonweathernew"
+			]
+		}
+	]
 ]
