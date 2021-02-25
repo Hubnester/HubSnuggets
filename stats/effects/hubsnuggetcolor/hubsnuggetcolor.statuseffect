@@ -1,6 +1,7 @@
 {
 	"name" : "hubsnuggetcolor",
 	"effectConfig" : {
+		// Maybe add ability to hue shift later
 		// Maybe move this to the status property later
 		"rainbow" : {
 			"order" : [9, 6, 1, 5, 4, 10, 3, 2, 8, 7],
