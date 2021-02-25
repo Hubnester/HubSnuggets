@@ -1,10 +1,10 @@
 {
   "author" : "Hubnester",
-  "description" : "TODO",
-  "friendlyName" : "TODO
+  "description" : "TODO
   Features: 
   - Snugget Race
   - Snuggets are now fullbright",
+  "friendlyName" : "Snugget Race"
   "includes" : ["FrackinUniverse", "FrackinRaces", "FrackinShip", "ztarbound"],
   "name" : "HubSnuggets",
   "priority" : 1,
