@@ -1,13 +1,14 @@
 {
 	"name" : "hubsnuggetcolor",
 	"effectConfig" : {
+		// MIGHT NOT NEED TO BE A STATUS EFFECT
 		// Maybe add ability to hue shift later
 		// Maybe move this to the status property later
 		"rainbow" : {
 			"order" : [9, 6, 1, 5, 4, 10, 3, 2, 8, 7],
 			"cycleTime" : 1
 		},
-		"usableByAnyone" : true
+		"usableByAnyone" : false
 	},
 	"defaultDuration" : 5,
 

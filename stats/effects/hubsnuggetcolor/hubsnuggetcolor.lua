@@ -26,31 +26,35 @@ function update(dt)
 			inited = true
 		end
 	else
-		if self.species == "hubsnugget" or self.usableByAnyone then
-			if not self.colorPartsReplacements.bodyColor then
-				local playerImages = world.entityPortrait(self.entityId, "full") or {}
-				sb.logInfo(sb.printJson(playerImages, 1))
-				if #playerImages ~= 0 then
-					local playerGender = world.entityGender(self.entityId)
-					local bodyImage = ""
-					for _, imageData in ipairs (playerImages) do
-						-- Not going to bother making this configurable since it's path is likely completely hardcoded
-						if string.find(imageData.image or "", "/humanoid/" .. self.species .. "/" .. playerGender .. "body.png") then
-							bodyImage = imageData.image
-							break
-						end
-					end
-					local bodyTypeSplits = bodyImage:split("?replace;")
-					for i, split in ipairs (bodyTypeSplits) do
-						if i ~= 1 then
-							self.colorPartsReplacements[colorParts[i -1]] = {}
-							for color1, color2 in split:gmatch("(%x+)=(%x+)") do
-								self.colorPartsReplacements[colorParts[i -1]][color1] = color2
-							end
-						end
+		if not self.colorPartsReplacements.bodyColor then
+			local playerImages = world.entityPortrait(self.entityId, "full") or {}
+			if #playerImages ~= 0 then
+				local playerGender = world.entityGender(self.entityId)
+				local colorImages = {body = "", hair = ""}
+				for _, imageData in ipairs (playerImages) do
+					-- Not going to bother making this configurable since it's path is likely completely hardcoded
+					if string.find(imageData.image or "", "/humanoid/" .. self.species .. "/" .. playerGender .. "body.png") then
+						colorImages["body"] = imageData.image
+					elseif string.find(imageData.image or "", "/humanoid/" .. self.species .. "/hair/") then
+						colorImages["hair"] = imageData.image
 					end
 				end
-			else
+				local bodySplits = colorImages.body:split("?replace;")
+				local hairSplits = colorImages.hair:split("?replace;")
+				local bodyTypeSplits = {}
+				bodyTypeSplits[1] = bodySplits[2] or ""
+				bodyTypeSplits[2] = hairSplits[2] or ""
+				bodyTypeSplits[3] = bodySplits[#bodySplits] or ""
+				for i, split in ipairs (bodyTypeSplits) do
+					self.colorPartsReplacements[colorParts[i]] = {}
+					for color1, color2 in split:gmatch("(%x+)=(%x+)") do
+						self.colorPartsReplacements[colorParts[i]][color1] = color2
+					end
+				end
+			end
+		else
+			local directives = ""
+			if self.species == "hubsnugget" or self.usableByAnyone then
 				-- Honestly this whole thing could be improved later when more colour options are added
 				local snuggetColor = status.statusProperty("hubsnuggetColor")
 				if snuggetColor == "rainbow" then
@@ -60,9 +64,9 @@ function update(dt)
 						if self.index > #(self.rainbowData.order or {}) then
 							self.index = 1
 						end
-						local directives = "?replace"
-						for part, colours in pairs (self.colorPartsReplacements) do
-							for color1, color2 in pairs (colours) do
+						directives = "?replace"
+						for part, colors in pairs (self.colorPartsReplacements) do
+							for color1, color2 in pairs (colors) do
 								local color = (self.raceConfig[part][self.index] or {})[string.lower(color1)]
 								if color then
 									directives = directives .. ";" .. color2 .. "=" .. color
@@ -73,9 +77,9 @@ function update(dt)
 						self.timer = nil
 					end
 				elseif snuggetColor == "rgb" then
-					local directives = "?replace"
-					for part, colours in pairs (self.colorPartsReplacements) do
-						for _, color2 in pairs (colours) do
+					directives = "?replace"
+					for part, colors in pairs (self.colorPartsReplacements) do
+						for _, color2 in pairs (colors) do
 							local r = tonumber(string.sub(color2, 1, 2), 16)
 							local g = tonumber(string.sub(color2, 3, 4), 16)
 							local b = tonumber(string.sub(color2, 5, 6), 16)
@@ -90,10 +94,26 @@ function update(dt)
 					if self.hue > 360 then
 						self.hue = 0
 					end
-				else
-					effect.setParentDirectives()
 				end
 			end
+			if status.statusProperty("hubsnuggetRGBHair") then
+				directives = "?replace"
+				for _, color2 in pairs (self.colorPartsReplacements.hairColor) do
+					local r = tonumber(string.sub(color2, 1, 2), 16)
+					local g = tonumber(string.sub(color2, 3, 4), 16)
+					local b = tonumber(string.sub(color2, 5, 6), 16)
+					local a = string.sub(color2, 7, 8) or ""
+					local hsR, hsG, hsB = hueshift(r, g, b, self.hue)
+					local color = string.format("%02x", hsR) .. string.format("%02x", hsG) .. string.format("%02x", hsB) .. a
+					directives = directives .. ";" .. color2 .. "=" .. color
+				end
+				effect.setParentDirectives(directives)
+				self.hue = self.hue + 1
+				if self.hue > 360 then
+					self.hue = 0
+				end
+			end
+			effect.setParentDirectives(directives)
 		end
 	end
 end
