@@ -1,0 +1,25 @@
+{
+	"itemName" : "hubsnuggetrgbhairdye",
+	"price" : 0,
+	"level" : 1,
+	"maxStack" : 1,
+	"rarity" : "Legendary",
+	"category" : "hubsnuggetPlayerDye",
+	"description" : "Activates RGB hair! If items are the same color, it'll color swap too!",
+	"shortdescription" : "RGB Hair Dye",
+	"twoHanded" : true,
+
+	"inventoryIcon" : "hubsnuggetrgbhairdyeicon.png",
+	"animation" : "/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.animation",
+	"animationParts" : {
+		"gun" : "hubsnuggetrgbhairdye.png"
+	},
+	"animationCustom" : {},
+	"scripts" : ["/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.lua"],
+
+	"fireTime" : 2.0,
+	"fireOffset" : [1.0, 0.0],
+	
+	"colorType" : "rgbHair",
+	"hueshift" : true
+}

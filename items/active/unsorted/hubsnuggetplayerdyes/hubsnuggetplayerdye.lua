@@ -9,6 +9,10 @@ function init()
 
 	self.active = false
 	storage.fireTimer = storage.fireTimer or 0
+	
+	self.colorType = config.getParameter("colorType")
+	self.hueshift = config.getParameter("hueshift")
+	storage.hueshift = storage.hueshift or 0
 end
 
 function update(dt, fireMode, shiftHeld)
@@ -37,9 +41,14 @@ function update(dt, fireMode, shiftHeld)
 	self.active = false
 
 	if storage.firing and animator.animationState("firing") == "off" then
-		status.setStatusProperty("hubsnuggetRGBHair", not status.statusProperty("hubsnuggetRGBHair"))
+		status.setStatusProperty("hubsnuggetColor", (status.statusProperty("hubsnuggetColor") ~= self.colorType) and self.colorType)
 		storage.firing = false
 		return
+	end
+	
+	if self.hueshift then
+		storage.hueshift = (storage.hueshift + 1) % 360
+		animator.setGlobalTag("hueshift", storage.hueshift)
 	end
 end
 

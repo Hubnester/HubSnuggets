@@ -1,0 +1,25 @@
+{
+	"itemName" : "hubsnuggetrgbsnuggetdye",
+	"price" : 0,
+	"level" : 1,
+	"maxStack" : 1,
+	"rarity" : "Legendary",
+	"category" : "hubsnuggetPlayerDye",
+	"description" : "Turns snuggets RGB. Use again to undo.",
+	"shortdescription" : "RGB Snugget Dye",
+	"twoHanded" : true,
+
+	"inventoryIcon" : "hubsnuggetrgbsnuggetdyeicon.png",
+	"animation" : "/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.animation",
+	"animationParts" : {
+		"gun" : "hubsnuggetrgbsnuggetdye.png"
+	},
+	"animationCustom" : {},
+	"scripts" : ["/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.lua"],
+
+	"fireTime" : 2.0,
+	"fireOffset" : [1.0, 0.0],
+	
+	"colorType" : "rgb",
+	"hueshift" : true
+}

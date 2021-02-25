@@ -1,5 +1,8 @@
 local hubInit = init or function() end
 local hubUpdate = update or function() end
+local hubUninit = uninit or function() end
+
+local hubFirstUpdate = true
 
 function init()
 	hubInit()
@@ -11,6 +14,10 @@ end
 
 function update(dt)
 	hubUpdate(dt)
+	if hubFirstUpdate then
+		status.addPersistentEffect("hubsnuggetcolor", "hubsnuggetcolor")
+		hubFirstUpdate = false
+	end
 	if self.hubsnuggetRace == "hubsnugget" then
 		local hubsnuggetIsLounging = world.sendEntityMessage(self.hubsnuggetEntityId, "hubsnuggetIsLounging")
 		if hubsnuggetIsLounging:result() then
@@ -19,4 +26,8 @@ function update(dt)
 			status.setStatusProperty("mouthPosition", self.hubsnuggetConfig.mouthPosition or {0, -1.875})
 		end
 	end
+end
+
+function uninit()
+	status.clearPersistentEffects("hubsnuggetcolor")
 end

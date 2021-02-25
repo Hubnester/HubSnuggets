@@ -53,10 +53,10 @@ function update(dt)
 				end
 			end
 		else
-			local directives = ""
+			local directives = self.directives or ""
+			local snuggetColor = status.statusProperty("hubsnuggetColor")
 			if self.species == "hubsnugget" or self.usableByAnyone then
 				-- Honestly this whole thing could be improved later when more colour options are added
-				local snuggetColor = status.statusProperty("hubsnuggetColor")
 				if snuggetColor == "rainbow" then
 					self.timer = (self.timer or self.rainbowData.cycleTime or 1) - dt
 					if self.timer and self.timer <= 0 then
@@ -73,7 +73,6 @@ function update(dt)
 								end
 							end
 						end
-						effect.setParentDirectives(directives)
 						self.timer = nil
 					end
 				elseif snuggetColor == "rgb" then
@@ -83,20 +82,19 @@ function update(dt)
 							local r = tonumber(string.sub(color2, 1, 2), 16)
 							local g = tonumber(string.sub(color2, 3, 4), 16)
 							local b = tonumber(string.sub(color2, 5, 6), 16)
-							--local a = tonumber(string.sub(color2, 7, 8))
+							local a = string.sub(color2, 7, 8) or ""
 							local hsR, hsG, hsB = hueshift(r, g, b, self.hue)
-							local color = string.format("%02x", hsR) .. string.format("%02x", hsG) .. string.format("%02x", hsB)
+							local color = string.format("%02x", hsR) .. string.format("%02x", hsG) .. string.format("%02x", hsB) .. a
 							directives = directives .. ";" .. color2 .. "=" .. color
 						end
 					end
-					effect.setParentDirectives(directives)
 					self.hue = self.hue + 1
 					if self.hue > 360 then
 						self.hue = 0
 					end
 				end
 			end
-			if status.statusProperty("hubsnuggetRGBHair") then
+			if snuggetColor == "rgbHair" then
 				directives = "?replace"
 				for _, color2 in pairs (self.colorPartsReplacements.hairColor) do
 					local r = tonumber(string.sub(color2, 1, 2), 16)
@@ -107,13 +105,14 @@ function update(dt)
 					local color = string.format("%02x", hsR) .. string.format("%02x", hsG) .. string.format("%02x", hsB) .. a
 					directives = directives .. ";" .. color2 .. "=" .. color
 				end
-				effect.setParentDirectives(directives)
 				self.hue = self.hue + 1
 				if self.hue > 360 then
 					self.hue = 0
 				end
 			end
-			effect.setParentDirectives(directives)
+			if snuggetColor ~= "rainbow" or not self.timer then
+				effect.setParentDirectives(directives)
+			end
 		end
 	end
 end

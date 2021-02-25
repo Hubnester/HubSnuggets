@@ -1,4 +1,7 @@
 {
+	"globalTagDefaults" : {
+		"hueshift" : "0"
+	},
 	"animatedParts" : {
 		"stateTypes" : {
 			"firing" : {
@@ -29,7 +32,7 @@
 			"gun" : {
 				"properties" : {
 					"centered" : true,
-					"image" : "<partImage>",
+					"image" : "<partImage>?hueshift=<hueshift>",
 					"offset" : [0.0, 0.0]
 				}
 			}
