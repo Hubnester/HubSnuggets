@@ -4,19 +4,36 @@ local hubUpdate = update or function() end
 function init()
 	hubInit()
 	
-	self.hubsnuggetConfig = root.assetJson("/species/hubsnugget.species")
-	self.hubsnuggetConfig.allowedCosmetics = self.hubsnuggetConfig.allowedCosmetics or {}
+	self.hubsnuggetSpeciesConfig = root.assetJson("/species/hubsnugget.species")
 	self.hubsnuggetEntityId = entity.id()
 	self.hubsnuggetRace = player.species()
 	self.hubsnuggetGender = player.gender()
 	
 	message.setHandler("hubsnuggetIsLounging", player.isLounging)
 	
+	hubsnuggetCosmeticsInit()
+	hubsnuggetRecipeUnlocks()
+end
+
+function update(dt)
+	hubUpdate(dt)
+	
+	hubsnuggetCosmeticsUpdate(dt)
+	hubsnuggetLoungingRender(dt)
+end
+
+----------------------------------------------------------------------------------------------------------
+-------------------------------------------- Cosmetics System --------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+function hubsnuggetCosmeticsInit()
+	self.hubsnuggetSpeciesConfig.allowedCosmetics = self.hubsnuggetSpeciesConfig.allowedCosmetics or {}
+
 	if self.hubsnuggetRace == "hubsnugget" and not status.statusProperty("hubsnuggetAlreadyCreated") then
 		local slots = {"chest", "legs"}
 		for _, slot in ipairs (slots) do
 			local item = player.equippedItem(slot) or {}
-			if self.hubsnuggetConfig.allowedCosmetics[item.name] then
+			if self.hubsnuggetSpeciesConfig.allowedCosmetics[item.name] then
 				player.setEquippedItem(slot .. "Cosmetic", item)
 				player.setEquippedItem(slot, nil)
 			end
@@ -25,23 +42,28 @@ function init()
 	end
 end
 
-function update(dt)
-	hubUpdate(dt)
-	
+function hubsnuggetCosmeticsUpdate(dt)
 	if self.hubsnuggetRace == "hubsnugget" then
-		-- Snugget cosmetics handling (improve this eventually)
+		-- Improve this eventually (maybe change the allowed cosmetics thing to a parameter in the item instead of using a table in the species file)
 		local slots = {"headCosmetic", "chestCosmetic", "legsCosmetic", "backCosmetic" }
 		for _, slot in ipairs (slots) do
 			local item = player.equippedItem(slot) or {}
-			if not self.hubsnuggetConfig.allowedCosmetics[item.name] then
+			if not self.hubsnuggetSpeciesConfig.allowedCosmetics[item.name] then
 				player.setEquippedItem(slot, "hubsnuggetinvis" .. slot:gsub("Cosmetic", ""))
 				if item.name then
 					player.giveItem(item)
 				end
 			end
 		end
-		
-		-- Snugget loungeable player rendering
+	end
+end
+
+----------------------------------------------------------------------------------------------------------
+-------------------------------------------- Lounging Render ---------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+function hubsnuggetLoungingRender(dt)
+	if self.hubsnuggetRace == "hubsnugget" then
 		local loungingIn = player.loungingIn()
 		if loungingIn and world.entityType(loungingIn) == "object" and world.getObjectParameter(loungingIn, "sitOrientation") == "lay" then
 			local playerImages = world.entityPortrait(self.hubsnuggetEntityId, "full") or {}
@@ -63,10 +85,23 @@ function update(dt)
 				end
 			end
 			for _, renderData in ipairs (renderImages) do
-				renderData.image = renderData.image:gsub(":idle", ":" .. self.hubsnuggetConfig.layFrame or "sleep") .. ((sitFlipped and "?flipx") or "")
-				renderData.position = self.hubsnuggetConfig.layImagePosition or {16, 18}
+				renderData.image = renderData.image:gsub(":idle", ":" .. self.hubsnuggetSpeciesConfig.layFrame or "sleep") .. ((sitFlipped and "?flipx") or "")
+				renderData.position = self.hubsnuggetSpeciesConfig.layImagePosition or {16, 18}
 				localAnimator.addDrawable(renderData, "object+1")
 			end
+		end
+	end
+end
+
+----------------------------------------------------------------------------------------------------------
+------------------------------------------ Recipe Unlock System ------------------------------------------
+----------------------------------------------------------------------------------------------------------
+function hubsnuggetRecipeUnlocks()
+	local unlocks = root.assetJson("/hubsnugget.config").unlocks or {}
+	local hasFu = root.itemConfig(unlocks.fuDetectionItem or "fu_precursorspawner")
+	if not hasFu then
+		for _, unlockData in ipairs (unlocks.defaultRacial or {}) do
+			player.giveBlueprint(unlockData)
 		end
 	end
 end

@@ -64,7 +64,7 @@
       "drawables" : [
       ],
       "fontSize" : 16,
-      "text" : "30% of Pixels Lost",
+      "text" : "50% of Pixels Lost",
       "textPosition" : {
         "position" : [40, 40],
         "vAnchor" : "top",
@@ -125,7 +125,7 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/respawn/novakid/layer2.png:<frame>"
+          "image" : "/cinematics/respawn/hubsnugget/layer2.png:<frame>"
         }
       ],
       "keyframes" : [

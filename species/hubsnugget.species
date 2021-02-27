@@ -41,36 +41,26 @@
 	"effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ff99e6FF?replace=31a6ffFF=e359b9FF",
 	"defaultBlueprints" : {
 		"tier1" : [
-
-// Empty Hands
+		// Empty Hands
 			{ "item" : "flagnovakid" },
 
-// Anvil
+		// Anvil
 			{ "item" : "novatier1head" },
 			{ "item" : "novatier1chest" },
 			{ "item" : "novatier1pants" },
 			{ "item" : "novatier2head" },
 			{ "item" : "novatier2chest" },
 			{ "item" : "novatier2pants" },
-			{ "item" : "ironrevolver" },
-			{ "item" : "ironassaultrifle" },
-			{ "item" : "tungstenmagnum" },
-			{ "item" : "tungstenshotgun" },
 
-
-// Anvil2
+		// Anvil2
 			{ "item" : "novatier3head" },
 			{ "item" : "novatier3chest" },
 			{ "item" : "novatier3pants" },
 			{ "item" : "novatier4head" },
 			{ "item" : "novatier4chest" },
 			{ "item" : "novatier4pants" },
-			{ "item" : "titaniummachinepistol" },
-			{ "item" : "titaniumsniperrifle" },
-			{ "item" : "durasteelrevolver" },
-			{ "item" : "durasteelassaultrifle" },
 
-// Anvil3
+		// Anvil3
 			{ "item" : "novatier5ahead" },
 			{ "item" : "novatier5achest" },
 			{ "item" : "novatier5apants" },
@@ -92,17 +82,10 @@
 			{ "item" : "novatier6schest" },
 			{ "item" : "novatier6spants" },
 
-			{ "item" : "aegisaltpistol" },
-			{ "item" : "aegisaltbow" },
-			{ "item" : "feroziumwand" },
-			{ "item" : "feroziumstaff" },
-			{ "item" : "violiumshortsword" },
-			{ "item" : "violiumbroadsword" },
-
-// Furniture Table 2
-			{ "item" : "novakidstoragelocker" },
+		// Furniture Table 2
+			{ "item" : "hubsnuggetstoragelocker" },
 			{ "item" : "hubsnuggetshipdoor" },
-			{ "item" : "hubsnuggethiphatch" }
+			{ "item" : "hubsnuggetshiphatch" }
 		]
 	},
 	"altOptionAsUndyColor" : true,
