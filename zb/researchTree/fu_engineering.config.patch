@@ -26,6 +26,6 @@
 	{
 		"op" : "add",
 		"path" : "/strings/research/hubsnuggetshipchangers",
-		"value" : [ "Snugget Ship Changer", "^orange;Tier 2^reset;\n\nTODO"]
+		"value" : [ "Snugget Ship Changer", "^orange;Tier 2^reset;\n\nItems that allow changing the Snugget ship. Can only be used on your ship. Made by hand."]
 	}
 ]
