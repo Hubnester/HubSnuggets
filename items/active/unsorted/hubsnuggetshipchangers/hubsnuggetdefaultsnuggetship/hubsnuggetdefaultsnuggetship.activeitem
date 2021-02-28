@@ -1,0 +1,27 @@
+{
+	"itemName" : "hubsnuggetdefaultsnuggetship",
+	"price" : 0,
+	"level" : 1,
+	"maxStack" : 1,
+	"rarity" : "Legendary",
+	"category" : "hubsnuggetShipChanger",
+	"description" : "Changes the Snugget ship to the default appearance. Only usable on your ship.",
+	"shortdescription" : "Snugget Ship (Default)",
+	"twoHanded" : true,
+
+	"inventoryIcon" : "hubsnuggetdefaultsnuggetship.png",
+	"tooltipFields" : {
+		"objectImage" : "/ships/hubsnugget/default/novakidt3.png"
+	},
+	"animation" : "/items/active/unsorted/hubsnuggetshipchangers/hubsnuggetshipchanger.animation",
+	"animationParts" : {
+		"gun" : "hubsnuggetdefaultsnuggetship.png"
+	},
+	"animationCustom" : {},
+	"scripts" : ["/items/active/unsorted/hubsnuggetshipchangers/hubsnuggetshipchanger.lua"],
+
+	"fireTime" : 2.0,
+	"fireOffset" : [1.0, 0.0],
+	
+	"shipType" : "default"
+}

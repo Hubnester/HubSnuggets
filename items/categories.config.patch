@@ -3,5 +3,10 @@
 		"op" : "add",
 		"path" : "/labels/hubsnuggetPlayerDye",
 		"value" : "Player Dye"
+	},
+	{
+		"op" : "add",
+		"path" : "/labels/hubsnuggetShipChanger",
+		"value" : "Ship Changer"
 	}
 ]

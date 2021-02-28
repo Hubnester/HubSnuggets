@@ -1,0 +1,31 @@
+[
+	// NOTE: THE UNLOCKS ARE SET HERE AND IN "/hubsnugget.config"
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_engineering/spacebasic/children/-",
+		"value" : "hubsnuggetshipchangers"
+	},
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_engineering/hubsnuggetshipchangers",
+		"value" : {
+			"icon" : "/items/active/unsorted/hubsnuggetshipchangers/hubsnuggetdefaultsnuggetship/hubsnuggetdefaultsnuggetship.png",
+			"position" : [57, -75],
+			"children" : [ ],
+			"price" : [ ["fuscienceresource", 250] ],
+			"unlocks" : ["hubsnuggetdefaultsnuggetship", "hubsnuggetblacksnuggetship", "hubsnuggetblack2snuggetship"],
+			"hubsnuggetRaceLock" : ["hubsnugget"],
+			"hubsnuggetShipLock" : "vanilla"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/acronyms/fu_engineering/HUBSNUGGETSHIPCHANGERS",
+		"value" : "hubsnuggetshipchangers"
+	},
+	{
+		"op" : "add",
+		"path" : "/strings/research/hubsnuggetshipchangers",
+		"value" : [ "Snugget Ship Changer", "^orange;Tier 2^reset;\n\nTODO"]
+	}
+]

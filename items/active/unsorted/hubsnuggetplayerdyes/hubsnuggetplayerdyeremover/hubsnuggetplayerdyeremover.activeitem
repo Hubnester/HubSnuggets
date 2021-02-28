@@ -1,0 +1,24 @@
+{
+	"itemName" : "hubsnuggetplayerdyeremover",
+	"price" : 0,
+	"level" : 1,
+	"maxStack" : 1,
+	"rarity" : "Legendary",
+	"category" : "hubsnuggetPlayerDye",
+	"description" : "Removes any currently active player dyes.",
+	"shortdescription" : "Player Dye Remover",
+	"twoHanded" : true,
+
+	"inventoryIcon" : "hubsnuggetplayerdyeremover.png",
+	"animation" : "/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.animation",
+	"animationParts" : {
+		"gun" : "hubsnuggetplayerdyeremover.png"
+	},
+	"animationCustom" : {},
+	"scripts" : ["/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetplayerdye.lua"],
+
+	"fireTime" : 2.0,
+	"fireOffset" : [1.0, 0.0],
+	
+	"colorType" : "null"
+}

@@ -1,0 +1,27 @@
+{
+	"itemName" : "hubsnuggetblacksnuggetship",
+	"price" : 0,
+	"level" : 1,
+	"maxStack" : 1,
+	"rarity" : "Legendary",
+	"category" : "hubsnuggetShipChanger",
+	"description" : "Changes the Snugget ship to the black ship with orange highlights. Only usable on your ship.",
+	"shortdescription" : "Snugget Ship (Black & Orange)",
+	"twoHanded" : true,
+
+	"inventoryIcon" : "hubsnuggetblacksnuggetship.png",
+	"tooltipFields" : {
+		"objectImage" : "/ships/hubsnugget/black/novakidt3.png"
+	},
+	"animation" : "/items/active/unsorted/hubsnuggetshipchangers/hubsnuggetshipchanger.animation",
+	"animationParts" : {
+		"gun" : "hubsnuggetblacksnuggetship.png"
+	},
+	"animationCustom" : {},
+	"scripts" : ["/items/active/unsorted/hubsnuggetshipchangers/hubsnuggetshipchanger.lua"],
+
+	"fireTime" : 2.0,
+	"fireOffset" : [1.0, 0.0],
+	
+	"shipType" : "black"
+}

@@ -1,0 +1,11 @@
+{
+	"input" : [
+		{ "item" : "liquidhealing", "count" : 5 },
+		{ "item" : "bottle", "count" : 1 }
+	],
+	"output" : {
+		"item" : "hubsnuggetplayerdyeremover",
+		"count" : 1
+	},
+	"groups" : [ "craftingwheel2", "dyes", "all" ]
+}

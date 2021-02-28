@@ -1,0 +1,15 @@
+{
+	"input" : [
+		{ "item" : "reddye", "count" : 1 },
+		{ "item" : "orangedye", "count" : 1 },
+		{ "item" : "yellowdye", "count" : 1 },
+		{ "item" : "greendye", "count" : 1 },
+		{ "item" : "bluedye", "count" : 1 },
+		{ "item" : "purpledye", "count" : 1 }
+	],
+	"output" : {
+		"item" : "hubsnuggetrainbowsnuggetdye",
+		"count" : 1
+	},
+	"groups" : [ "craftingwheel2", "dyes", "all" ]
+}

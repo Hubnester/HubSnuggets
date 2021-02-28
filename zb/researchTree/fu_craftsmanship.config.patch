@@ -24,7 +24,7 @@
 	{
 		"op" : "add",
 		"path" : "/strings/research/hubsnuggetcosmetics",
-		"value" : [ "Snugget Cosmetics", "Cosmetics made for Snuggets. Wearable by the Snugget race. Can be dropped near pet Snuggets to make them wear it. The visible cosmetics can be used by anyone."]
+		"value" : [ "Snugget Cosmetics", "^orange;Tier 2^reset;\n\nCosmetics made for Snuggets. Wearable by the Snugget race. Can be dropped near pet Snuggets to make them wear it. The invisible cosmetics can be used by anyone."]
 	},
 	{
 		"op" : "add",
@@ -39,7 +39,7 @@
 			"position" : [50, -30],
 			"children" : [ ],
 			"price" : [ ["fuscienceresource", 150],["bluedye", 1],["reddye", 1],["yellowdye", 1]],
-			"unlocks" : ["hubsnuggetrgbhairdye", "hubsnuggetrgbsnuggetdye", "hubsnuggetrainbowsnuggetdye"]
+			"unlocks" : ["hubsnuggetrgbhairdye", "hubsnuggetrgbsnuggetdye", "hubsnuggetrainbowsnuggetdye", "hubsnuggetplayerdyeremover"]
 		}
 	},
 	{
@@ -50,6 +50,6 @@
 	{
 		"op" : "add",
 		"path" : "/strings/research/hubsnuggetplayerdyes",
-		"value" : [ "Snugget Dyes", "Todo"]
+		"value" : [ "Snugget Dyes", "^orange;Tier 2^reset;\n\nDyes that can be used to change the colour of Snuggets. Use them again to unapply them. The RGB Hair Dye can be used by any race. The Player Dye Remover can be used to remove the currently active player dye."]
 	}
 ]
