@@ -1,0 +1,55 @@
+[
+	// NOTE: THE UNLOCKS ARE SET HERE AND IN "/hubsnugget.config"
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_craftsmanship/sewing2/children/-",
+		"value" : "hubsnuggetcosmetics"
+	},
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_craftsmanship/hubsnuggetcosmetics",
+		"value" : {
+			"icon" : "/items/armors/hubsnugget/hubsnuggetclassyhat/icons.png:head",
+			"position" : [100, 40],
+			"children" : [ ],
+			"price" : [ ["fuscienceresource", 230],["cottonwool", 4] ],
+			"unlocks" : ["hubsnuggetinvisback", "hubsnuggetinvishead", "hubsnuggetinvischest", "hubsnuggetinvislegs", "hubsnuggetholidayhat", "hubsnuggetraindeerhat", "hubsnuggetclassyhat", "hubsnuggetbowtie", "hubsnuggetwizardhat"]
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/acronyms/fu_craftsmanship/HUBSNUGGETCOSMETICS",
+		"value" : "hubsnuggetcosmetics"
+	},
+	{
+		"op" : "add",
+		"path" : "/strings/research/hubsnuggetcosmetics",
+		"value" : [ "Snugget Cosmetics", "Cosmetics made for Snuggets. Wearable by the Snugget race. Can be dropped near pet Snuggets to make them wear it. The visible cosmetics can be used by anyone."]
+	},
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_craftsmanship/dye1/children/-",
+		"value" : "hubsnuggetplayerdyes"
+	},
+	{
+		"op" : "add",
+		"path" : "/researchTree/fu_craftsmanship/hubsnuggetplayerdyes",
+		"value" : {
+			"icon" : "/items/active/unsorted/hubsnuggetplayerdyes/hubsnuggetrgbsnuggetdye/hubsnuggetrgbsnuggetdyeicon.png",
+			"position" : [50, -30],
+			"children" : [ ],
+			"price" : [ ["fuscienceresource", 150],["bluedye", 1],["reddye", 1],["yellowdye", 1]],
+			"unlocks" : ["hubsnuggetrgbhairdye", "hubsnuggetrgbsnuggetdye", "hubsnuggetrainbowsnuggetdye"]
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/acronyms/fu_craftsmanship/HUBSNUGGETPLAYERDYES",
+		"value" : "hubsnuggetplayerdyes"
+	},
+	{
+		"op" : "add",
+		"path" : "/strings/research/hubsnuggetplayerdyes",
+		"value" : [ "Snugget Dyes", "Todo"]
+	}
+]

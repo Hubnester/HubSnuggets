@@ -103,5 +103,31 @@ function hubsnuggetRecipeUnlocks()
 		for _, unlockData in ipairs (unlocks.defaultRacial or {}) do
 			player.giveBlueprint(unlockData)
 		end
+		for _, treeData in pairs (unlocks.researchUnlocks) do
+			for _, nodeData in pairs (treeData) do
+				-- Add conditional check
+				if not nodeData.raceLocked or self.hubsnuggetRace == "hubsnugget" then
+					for _, unlock in ipairs (nodeData.unlocks or {}) do
+						player.giveBlueprint(unlock)
+					end
+				end
+			end
+		end
+	else
+		local researched = status.statusProperty("zb_researchtree_researched", {}) or {}
+		for tree, treeData in pairs (unlocks.researchUnlocks) do
+			researched[tree] = researched[tree] or "0~~~"
+			for node, nodeData in pairs (treeData) do
+				if nodeData.defaultUnlock and self.hubsnuggetRace == "hubsnugget" and not string.find(researched[tree], node) then
+					researched[tree] = researched[tree] .. node .. ","
+					status.setStatusProperty("zb_researchtree_researched", researched)
+				end
+				if string.find(researched[tree], node) then
+					for _, unlock in ipairs (nodeData.unlocks or {}) do
+						player.giveBlueprint(unlock)
+					end
+				end
+			end
+		end
 	end
 end

@@ -30,7 +30,7 @@
 	{
 		"op" : "add",
 		"path" : "/baseParameters/hubsnuggetCosmeticQueryRange",
-		"value" : 50
+		"value" : 5
 	},
 	{
 		"op" : "add",
