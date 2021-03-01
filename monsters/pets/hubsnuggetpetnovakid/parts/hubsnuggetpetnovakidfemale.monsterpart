@@ -1,0 +1,14 @@
+{
+	"name" : "hubsnuggetpetnovakidfemale",
+	"category" : "hubsnuggetpetnovakid",
+	"type" : "body",
+
+	"frames" : {
+		"hair" : "/humanoid/novakid/hair/fem0.png",
+		"head" : "/humanoid/novakid/femalehead.png",
+		"facialHair" : "/humanoid/novakid/brand/0.png",
+		"body" : "/humanoid/novakid/femalebody.png",
+		"frontArm" : "/humanoid/novakid/frontarm.png",
+		"backArm" : "/humanoid/novakid/backarm.png"
+	}
+}

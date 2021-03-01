@@ -1,0 +1,869 @@
+{
+	"globalTagDefaults" : {
+		"directives" : ""
+	},
+	"animatedParts" : {
+		"stateTypes" : {
+			"movement" : {
+				"priority" : 0,
+				"default" : "idle",
+				"states" : {
+					"idle" : {
+						"frames" : 1
+					},
+					"stand" : {
+						"frames" : 1
+					},
+					"run" : {
+						"frames" : 4,
+						"cycle" : 0.5,
+						"mode" : "loop"
+					},
+					"blink" : {
+						"frames" : 1
+					},
+					"walk" : {
+						"frames" : 4,
+						"cycle" : 0.5,
+						"mode" : "loop"
+					},
+					"jumping" : {
+						"frames" : 3,
+						"cycle" : 0.4,
+						"mode" : "loop"
+					},
+					"falling" : {
+						"frames" : 2,
+						"cycle" : 0.4,
+						"mode" : "loop"
+					},
+					"eat" : {
+						"frames" : 3,
+						"cycle" : 0.375,
+						"mode" : "transition",
+						"transition" : "eatloop"
+					},
+					"eatloop" : {
+						"frames" : 2,
+						"cycle" : 0.25,
+						"mode" : "loop"
+					},
+					"inspect" : {
+						"frames" : 4,
+						"cycle" : 0.5
+					},
+					"swim" : {
+						"frames" : 6,
+						"cycle" : 0.6
+					},
+					"sound" : {
+						"frames" : 4,
+						"cycle" : 0.5,
+						"mode" : "transition",
+						"transition" : "stand"
+					},
+					"sleep" : {
+						"frames" : 1
+					},
+					"invisible" : {
+						"frames" : 1
+					}
+				}
+			}
+		},
+
+		"parts" : {
+			"backArm" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 0
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:idle.<frame><directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:stand.<frame><directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:run.<frame><directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:blink.<frame><directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:walk.<frame><directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:jump.<frame><directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:fall.<frame><directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:eat.<frame><directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:eatloop.<frame><directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:inspect.<frame><directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:swim.<frame><directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:sound.<frame><directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:sleep.<frame><directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:invisible.<frame><directives>"
+							}
+						}
+					}
+				}
+			},
+			"body" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 1
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:idle.<frame><directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:stand.<frame><directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:run.<frame><directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:blink.<frame><directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:walk.<frame><directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:jump.<frame><directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:fall.<frame><directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:eat.<frame><directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:eatloop.<frame><directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:inspect.<frame><directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:swim.<frame><directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:sound.<frame><directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:sleep.<frame><directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:invisible.<frame><directives>"
+							}
+						}
+					}
+				}
+			},
+			"head" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 2
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						}
+					}
+				}
+			},
+			"hair" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 3
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						}
+					}
+				}
+			},
+			"facialHair" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 4
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:normal<directives>"
+							}
+						}
+					}
+				}
+			},
+			"frontArm" : {
+				"properties" : {
+					"centered" : true,
+					"offset" : [0, 1.5625],
+					"zLevel" : 5
+				},
+				"partStates" : {
+					"movement" : {
+						"idle" : {
+							"properties" : {
+								"image" : "<partImage>:idle.<frame><directives>"
+							}
+						},
+						"stand" : {
+							"properties" : {
+								"image" : "<partImage>:stand.<frame><directives>"
+							}
+						},
+						"run" : {
+							"properties" : {
+								"image" : "<partImage>:run.<frame><directives>"
+							}
+						},
+						"blink" : {
+							"properties" : {
+								"image" : "<partImage>:blink.<frame><directives>"
+							}
+						},
+						"walk" : {
+							"properties" : {
+								"image" : "<partImage>:walk.<frame><directives>"
+							}
+						},
+						"jumping" : {
+							"properties" : {
+								"image" : "<partImage>:jump.<frame><directives>"
+							}
+						},
+						"falling" : {
+							"properties" : {
+								"image" : "<partImage>:fall.<frame><directives>"
+							}
+						},
+						"eat" : {
+							"properties" : {
+								"image" : "<partImage>:eat.<frame><directives>"
+							}
+						},
+						"eatloop" : {
+							"properties" : {
+								"image" : "<partImage>:eatloop.<frame><directives>"
+							}
+						},
+						"inspect" : {
+							"properties" : {
+								"image" : "<partImage>:inspect.<frame><directives>"
+							}
+						},
+						"swim" : {
+							"properties" : {
+								"image" : "<partImage>:swim.<frame><directives>"
+							}
+						},
+						"sound" : {
+							"properties" : {
+								"image" : "<partImage>:sound.<frame><directives>"
+							}
+						},
+						"sleep" : {
+							"properties" : {
+								"image" : "<partImage>:sleep.<frame><directives>"
+							}
+						},
+						"invisible" : {
+							"properties" : {
+								"image" : "<partImage>:invisible.<frame><directives>"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+
+	"particleEmitters" : {
+		"damage" : {
+			"emissionRate" : 0.7,
+			"particles" : [
+			]
+		},
+		"deathPoof" : {
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/puff2c/puff2c.animation",
+						"size" : 1,
+						"angularVelocity" : 35,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [0, 0],
+						"finalVelocity" : [0, 0],
+						"approach" : [1, 1],
+						"timeToLive" : 0.4,
+						"layer" : "middle"
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz1/fizz1.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [-8, 8],
+						"finalVelocity" : [-3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [-4, 2],
+							"finalVelocity" : [-3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz1/fizz1.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [8, 8],
+						"finalVelocity" : [3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [4, 2],
+							"finalVelocity" : [3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz2/fizz2.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [-8, 8],
+						"finalVelocity" : [-3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [-4, 2],
+							"finalVelocity" : [-3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz2/fizz2.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [8, 8],
+						"finalVelocity" : [3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [4, 2],
+							"finalVelocity" : [3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz3/fizz3.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [-8, 8],
+						"finalVelocity" : [-3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [-4, 2],
+							"finalVelocity" : [-3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz3/fizz3.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [8, 8],
+						"finalVelocity" : [3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [4, 2],
+							"finalVelocity" : [3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz4/fizz4.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [-8, 8],
+						"finalVelocity" : [-3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [-4, 2],
+							"finalVelocity" : [-3, -4]
+						}
+					}
+				},
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/fizz4/fizz4.animation",
+						"size" : 1,
+						"angularVelocity" : 20,
+						"fade" : 1,
+						"destructionTime" : 1,
+						"position" : [0, 0],
+						"initialVelocity" : [8, 8],
+						"finalVelocity" : [3, -4],
+						"approach" : [15, 15],
+						"timeToLive" : 3.45,
+						"layer" : "middle",
+						"variance" : {
+							"initialVelocity" : [4, 2],
+							"finalVelocity" : [3, -4]
+						}
+					}
+				}
+			]
+		},
+
+		"emotehappy" : {
+			"emissionRate" : 1,
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/emotes/happy.animation",
+						"position" : [0.5, 2],
+						"finalVelocity" : [0, 0],
+						"initialVelocity" : [0, 0],
+						"destructionTime" : 0.2,
+						"destructionAction" : "shrink",
+						"layer" : "front",
+						"timeToLive" : 0.8,
+						"flippable" : false
+					}
+				}
+			]
+		},
+
+		"emotesleepy" : {
+			"emissionRate" : 1,
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/emotes/sleepy.animation",
+						"position" : [0.5, 2],
+						"finalVelocity" : [0, 0],
+						"initialVelocity" : [0, 0],
+						"destructionTime" : 0.2,
+						"destructionAction" : "shrink",
+						"layer" : "front",
+						"timeToLive" : 0.8,
+						"flippable" : false
+					}
+				}
+			]
+		},
+
+		"emotesad" : {
+			"emissionRate" : 1,
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/emotes/sad.animation",
+						"position" : [0.5, 2],
+						"finalVelocity" : [0, 0],
+						"initialVelocity" : [0, 0],
+						"destructionTime" : 0.2,
+						"destructionAction" : "shrink",
+						"layer" : "front",
+						"timeToLive" : 0.8,
+						"flippable" : false
+					}
+				}
+			]
+		},
+
+		"emoteconfused" : {
+			"emissionRate" : 1,
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/emotes/confused.animation",
+						"position" : [0.5, 2],
+						"finalVelocity" : [0, 0],
+						"initialVelocity" : [0, 0],
+						"destructionTime" : 0.2,
+						"destructionAction" : "shrink",
+						"layer" : "front",
+						"timeToLive" : 0.8,
+						"flippable" : false
+					}
+				}
+			]
+		},
+
+		"sleep" : {
+			"emissionRate" : 2,
+			"particles" : [
+				{
+					"particle" : {
+						"type" : "animated",
+						"animation" : "/animations/statuseffects/sleep/sleep.animation",
+						"position" : [0, 0],
+						"initialVelocity" : [0, 3],
+						"finalVelocity" : [10, 1],
+						"approach" : [2, 50],
+						"size" : 1,
+						"layer" : "middle",
+						"timeToLive" : 9,
+						"flippable" : false,
+						"variance" : {
+							"size" : 0.3
+						}
+					}
+				}
+			]
+		}
+	},
+
+	"effects" : {
+		"blink" : {
+			"type" : "flash",
+			"time" : 0.25,
+			"directives" : "fade=ffffff;0.5"
+		}
+	},
+
+	"sounds" : {
+		"turnHostile" : [ ],
+		"deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+		"petsound" : []
+	}
+}

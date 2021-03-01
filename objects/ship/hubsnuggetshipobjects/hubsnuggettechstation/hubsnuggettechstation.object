@@ -69,7 +69,7 @@
 	"animationScripts" : ["/objects/ship/hubsnuggetshipobjects/hubsnuggetshipobjectrenderanimation.lua"],
 	"scriptDelta" : 20,
 	"animationScriptDelta" : 1,
-	"shipPetType" : "snugget",
+	"shipPetType" : "hubsnuggetpetnovakid",
 	"spawnOffset" : [2, -1],
 
 	"chatPortrait" : "/ai/portraits/hubsnuggetportrait.png:yell.1",
