@@ -15,11 +15,10 @@
 	"inventoryIcon" : "hubsnuggetshiprendericon.png",
 	"orientations" : [
 		{
-			"image" : "hubsnuggetshiprender.png:<color>",
-			"imagePosition" : [0, 0],
-
+			"image" : "/assetmissing.png",
+			
 			"spaceScan" : 0.1,
-			"metaBoundBox" : [-390, 0, 50, 34]	// edit this to bascially just cover the entire non-red section of the ship
+			"metaBoundBox" : [-390, 0, 50, 34]
 		}
 	],
 

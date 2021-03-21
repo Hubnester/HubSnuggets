@@ -15,7 +15,7 @@
 						"frames" : 1
 					},
 					"run" : {
-						"frames" : 4,
+						"frames" : 8,
 						"cycle" : 0.5,
 						"mode" : "loop"
 					},
@@ -23,17 +23,17 @@
 						"frames" : 1
 					},
 					"walk" : {
-						"frames" : 4,
+						"frames" : 8,
 						"cycle" : 0.5,
 						"mode" : "loop"
 					},
 					"jumping" : {
-						"frames" : 3,
+						"frames" : 4,
 						"cycle" : 0.4,
 						"mode" : "loop"
 					},
 					"falling" : {
-						"frames" : 2,
+						"frames" : 4,
 						"cycle" : 0.4,
 						"mode" : "loop"
 					},
@@ -76,6 +76,7 @@
 			"backArm" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 0
 				},
@@ -88,7 +89,7 @@
 						},
 						"stand" : {
 							"properties" : {
-								"image" : "<partImage>:stand.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"run" : {
@@ -98,7 +99,7 @@
 						},
 						"blink" : {
 							"properties" : {
-								"image" : "<partImage>:blink.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"walk" : {
@@ -118,17 +119,17 @@
 						},
 						"eat" : {
 							"properties" : {
-								"image" : "<partImage>:eat.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"eatloop" : {
 							"properties" : {
-								"image" : "<partImage>:eatloop.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"inspect" : {
 							"properties" : {
-								"image" : "<partImage>:inspect.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"swim" : {
@@ -143,12 +144,12 @@
 						},
 						"sleep" : {
 							"properties" : {
-								"image" : "<partImage>:sleep.<frame><directives>"
+								"image" : "<partImage>:lay<frame><directives>"
 							}
 						},
 						"invisible" : {
 							"properties" : {
-								"image" : "<partImage>:invisible.<frame><directives>"
+								"image" : "/assetmissing.png"
 							}
 						}
 					}
@@ -157,6 +158,7 @@
 			"body" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 1
 				},
@@ -169,7 +171,7 @@
 						},
 						"stand" : {
 							"properties" : {
-								"image" : "<partImage>:stand.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"run" : {
@@ -179,7 +181,7 @@
 						},
 						"blink" : {
 							"properties" : {
-								"image" : "<partImage>:blink.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"walk" : {
@@ -199,17 +201,17 @@
 						},
 						"eat" : {
 							"properties" : {
-								"image" : "<partImage>:eat.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"eatloop" : {
 							"properties" : {
-								"image" : "<partImage>:eatloop.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"inspect" : {
 							"properties" : {
-								"image" : "<partImage>:inspect.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"swim" : {
@@ -224,12 +226,12 @@
 						},
 						"sleep" : {
 							"properties" : {
-								"image" : "<partImage>:sleep.<frame><directives>"
+								"image" : "<partImage>:lay<frame><directives>"
 							}
 						},
 						"invisible" : {
 							"properties" : {
-								"image" : "<partImage>:invisible.<frame><directives>"
+								"image" : "/assetmissing.png"
 							}
 						}
 					}
@@ -238,6 +240,7 @@
 			"head" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 2
 				},
@@ -319,6 +322,7 @@
 			"hair" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 3
 				},
@@ -400,6 +404,7 @@
 			"facialHair" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 4
 				},
@@ -481,6 +486,7 @@
 			"frontArm" : {
 				"properties" : {
 					"centered" : true,
+					"fullbright" : true,
 					"offset" : [0, 1.5625],
 					"zLevel" : 5
 				},
@@ -493,7 +499,7 @@
 						},
 						"stand" : {
 							"properties" : {
-								"image" : "<partImage>:stand.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"run" : {
@@ -503,7 +509,7 @@
 						},
 						"blink" : {
 							"properties" : {
-								"image" : "<partImage>:blink.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"walk" : {
@@ -523,17 +529,17 @@
 						},
 						"eat" : {
 							"properties" : {
-								"image" : "<partImage>:eat.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"eatloop" : {
 							"properties" : {
-								"image" : "<partImage>:eatloop.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"inspect" : {
 							"properties" : {
-								"image" : "<partImage>:inspect.<frame><directives>"
+								"image" : "<partImage>:idle.<frame><directives>"
 							}
 						},
 						"swim" : {
@@ -548,12 +554,12 @@
 						},
 						"sleep" : {
 							"properties" : {
-								"image" : "<partImage>:sleep.<frame><directives>"
+								"image" : "<partImage>:lay<frame><directives>"
 							}
 						},
 						"invisible" : {
 							"properties" : {
-								"image" : "<partImage>:invisible.<frame><directives>"
+								"image" : "/assetmissing.png"
 							}
 						}
 					}
