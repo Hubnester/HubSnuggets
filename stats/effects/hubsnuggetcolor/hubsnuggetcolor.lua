@@ -12,10 +12,13 @@ function update(dt)
 			self.raceConfig = root.assetJson("/species/" .. self.species .. ".species")
 			for _, part in ipairs (colorParts) do
 				local newPartData = {}
-				for i, colourData in ipairs (self.raceConfig[part]) do
+				for i, colorData in ipairs (self.raceConfig[part]) do
 					newPartData[i] = {}
-					for color1, color2 in pairs (colourData) do
-						newPartData[i][string.lower(color1)] = string.lower(color2)
+					-- Fix for an issue with Aegi
+					if type(colorData) == "table" then
+						for color1, color2 in pairs (colorData) do
+							newPartData[i][string.lower(color1)] = string.lower(color2)
+						end
 					end
 				end
 				self.raceConfig[part] = newPartData
@@ -88,7 +91,7 @@ function update(dt)
 							directives = directives .. ";" .. color2 .. "=" .. color
 						end
 					end
-					self.hue = self.hue + 1
+					self.hue = self.hue + 2
 					if self.hue > 360 then
 						self.hue = 0
 					end
