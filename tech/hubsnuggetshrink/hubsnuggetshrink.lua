@@ -12,6 +12,7 @@ function initCommonParameters()
 	self.collisionSet = {"Null", "Block", "Dynamic", "Slippery"}
 	self.size = config.getParameter("size", 1)
 	self.positionOffsetMod = config.getParameter("positionOffsetMod", 0)
+	self.statMod = config.getParameter("statMod", 1)
 end
 
 function uninit()
@@ -33,7 +34,7 @@ function update(args)
 
 	if self.active then
 		mcontroller.controlParameters(self.transformedMovementParameters)
-		status.setResourcePercentage("energyRegenBlock", 1.0)
+		--status.setResourcePercentage("energyRegenBlock", 1.0)
 
 		checkForceDeactivate(args.dt)
 	end
@@ -137,9 +138,12 @@ function activate()
 	local posOffset = {0, positionOffset()}
 	posOffset[2] = posOffset[2] - self.positionOffsetMod
 	tech.setParentOffset(posOffset)
-	tech.setToolUsageSuppressed(true)
 	tech.setParentDirectives("?scalenearest=" .. self.size)
-	status.setPersistentEffects("movementAbility", {{stat = "activeMovementAbilities", amount = 1}})
+	status.setPersistentEffects("movementAbility", {{stat = "hubsnuggetShrinkActive", amount = 1}, 
+		{stat = "powerMultiplier", effectiveMultiplier = self.statMod},
+		{stat = "protection", effectiveMultiplier = self.statMod},
+		{stat = "maxEnergy", effectiveMultiplier = self.statMod},
+		{stat = "maxHealth", effectiveMultiplier = self.statMod}})
 	self.active = true
 end
 
@@ -149,7 +153,6 @@ function deactivate()
 	end
 	animator.stopAllSounds("forceDeactivate")
 	tech.setParentOffset({0, 0})
-	tech.setToolUsageSuppressed(false)
 	tech.setParentDirectives()
 	status.clearPersistentEffects("movementAbility")
 	self.active = false

@@ -20,7 +20,8 @@ function update(dt)
 	end
 	if self.hubsnuggetRace == "hubsnugget" then
 		local hubsnuggetIsLounging = world.sendEntityMessage(self.hubsnuggetEntityId, "hubsnuggetIsLounging")
-		if hubsnuggetIsLounging:result() then
+		if hubsnuggetIsLounging:result() or status.statPositive("activeMovementAbilities") or status.statPositive("hubsnuggetShrinkActive") then
+			-- Restore mouth position to default if lounging, in a distortion sphere type tech or shrunk usign the snugget tech
 			status.setStatusProperty("mouthPosition", self.hubsnuggetConfig.loungingMouthPosition or {0, 0.75})
 		else
 			status.setStatusProperty("mouthPosition", self.hubsnuggetConfig.mouthPosition or {0, -1.875})

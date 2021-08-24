@@ -1,14 +1,14 @@
 {
-	"name" : "hub_snuggetshrink",
+	"name" : "hubsnuggetshrink",
 	"type" : "head",
 
-	"scripts" : ["hub_snuggetshrink.lua"],
-	"animator" : "hub_snuggetshrink.animation",
+	"scripts" : ["hubsnuggetshrink.lua"],
+	"animator" : "hubsnuggetshrink.animation",
 
-	"description" : "Shrink down to fit in smaller spaces. Prevents use of items. ^green;[F]",
+	"description" : "Shrink down to fit in smaller spaces. Reduces main stats to 44% of their values due to reduced size. ^green;[F]",
 	"shortDescription" : "Snugget Shrink",
 	"rarity" : "Uncommon",
-	"icon" : "/tech/distortionsphere.png",
+	"icon" : "/tech/hubsnuggetshrink/hubsnuggetshrink.png",
 
 	"chipCost" : 8,
 
@@ -18,6 +18,8 @@
 	"size" : 0.75,
 	// A modifier to where the player renders to make it render properly when smaller
 	"positionOffsetMod" : 0.5,
+	// The modifier to power, defense, max hp and max energy
+	"statMod" : 0.44,
 
 	"energyCost" : 50
 }

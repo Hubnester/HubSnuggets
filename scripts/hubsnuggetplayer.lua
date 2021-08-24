@@ -13,6 +13,16 @@ function init()
 	
 	hubsnuggetCosmeticsInit()
 	hubsnuggetRecipeUnlocks()
+	
+	-- Shrink tech unlock stuff
+	if self.hubsnuggetRace == "hubsnugget" and not player.getProperty("hubsnuggetShrinkTechGranted") then
+		player.makeTechAvailable("hubsnuggetshrink")
+		player.enableTech("hubsnuggetshrink")
+		if not player.equippedTech("head") then
+			player.equipTech("hubsnuggetshrink")
+		end
+		player.setProperty("hubsnuggetShrinkTechGranted", true)
+	end
 end
 
 function update(dt)
